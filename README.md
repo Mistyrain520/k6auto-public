@@ -103,17 +103,15 @@ xk6 build --verbose --k6-version v1.7.1 \
 ### 3. Docker 一键部署
 
 ```bash
-# 构建镜像
-docker build -t k6auto:k6-v1.7.1 .
+# 使用本地 Dockerfile 构建镜像
+docker build -f Dockerfile -t k6auto:k6-v1.7.1 .
 
-# 运行测试
-docker run -v $(pwd):/home/xk6 k6auto:k6-v1.7.1 ./k6 run main/main.js
 ```
 
 ### 4. Kubernetes 分布式执行
 
 ```bash
-# 部署 k6 worker 集群
+# 部署 k6 worker 集群参考
 kubectl apply -f k6-worker-deployment.yaml
 kubectl apply -f k6-worker-service.yaml
 ```
@@ -515,4 +513,3 @@ export function teardown(data) {
 
 - 感谢 [linux.do](https://linux.do/) 社区推广支持。
 - 感谢 [k6](https://k6.io/) 团队提供的开源项目。
-
