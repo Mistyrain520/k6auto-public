@@ -1,0 +1,4 @@
+interface:
+  display_name: "K6 环境管理"
+  short_description: "管理 k6auto 测试环境；初始化项目登录鉴权（需二次确认）"
+  default_prompt: "Use $k6-env to 管理 k6auto 测试环境（环境操作由 LLM 执行；初始化项目登录鉴权需二次确认）"

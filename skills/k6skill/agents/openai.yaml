@@ -1,0 +1,4 @@
+interface:
+  display_name: "K6 Skill"
+  short_description: "Convert curl, build and test k6 flows"
+  default_prompt: "Use $k6skill to convert curl into k6 APIs, build scenarios, performance tests, or debug a scenario."

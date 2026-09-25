@@ -1,0 +1,445 @@
+===== pod: gitee-proxima-core-67f98f6558-7nwwl =====
+2026-08-15T03:28:35.668Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [undefined] redisLockCycle success key=email-interval-key, value=0.01470794051391977 time=50000 start=1786764515668
+2026-08-15T03:28:35.668Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb start EmailIntervalKey extra:{ args: [ 'email-interval-key', '0.01470794051391977', 50000 ] }
+2026-08-15T03:28:35.685Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - start interval task
+2026-08-15T03:28:35.687Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:28:35.688Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - not reach time interval, remaining 179995ms
+2026-08-15T03:28:35.697Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - start interval task
+2026-08-15T03:28:35.699Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - start interval task
+2026-08-15T03:28:35.700Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - start interval task
+2026-08-15T03:28:35.703Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - start interval task
+2026-08-15T03:28:35.704Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:28:35.705Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:28:35.706Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:28:35.706Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - start interval task
+2026-08-15T03:28:35.708Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:28:35.709Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - start interval task
+2026-08-15T03:28:35.711Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - start interval task
+2026-08-15T03:28:35.712Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - not reach time interval, remaining 119996ms
+2026-08-15T03:28:35.712Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - not reach time interval, remaining 180007ms
+2026-08-15T03:28:35.712Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - not reach time interval, remaining 239994ms
+2026-08-15T03:28:35.713Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:28:35.713Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:28:35.714Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:28:35.714Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - executing task, time range: 300010ms (Sat Aug 15 2026 11:23:35 GMT+0800 (China Standard Time) to Sat Aug 15 2026 11:28:35 GMT+0800 (China Standard Time))
+2026-08-15T03:28:35.714Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: email_run_start - runId=d85fb84c-a98a-469d-b9da-69ca7941e52f prevActiveTime=1786764215702 effectivePrevActiveTime=1786764215702 now=1786764515712 isAggregation=true intervalMs=300000
+2026-08-15T03:28:35.714Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - not reach time interval, remaining 239994ms
+2026-08-15T03:28:35.715Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - not reach time interval, remaining 240009ms
+2026-08-15T03:28:35.716Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - start interval task
+2026-08-15T03:28:35.717Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - not reach time interval, remaining 179999ms
+2026-08-15T03:28:35.718Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:28:35.718Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - executing task, time range: 300005ms (Sat Aug 15 2026 11:23:35 GMT+0800 (China Standard Time) to Sat Aug 15 2026 11:28:35 GMT+0800 (China Standard Time))
+2026-08-15T03:28:35.718Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: email_run_start - runId=fb54c89b-a959-4c1d-9fc1-1d9073bc50d0 prevActiveTime=1786764215713 effectivePrevActiveTime=1786764215713 now=1786764515718 isAggregation=true intervalMs=300000
+2026-08-15T03:28:35.726Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: handleBetweenItem - found 0 items
+2026-08-15T03:28:35.727Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - task completed successfully
+2026-08-15T03:28:35.727Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: email_run_end - runId=fb54c89b-a959-4c1d-9fc1-1d9073bc50d0 ok=true durationMs=8 cursorUpdated=true
+2026-08-15T03:28:35.758Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: handleBetweenItem - found 0 items
+2026-08-15T03:28:35.758Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - task completed successfully
+2026-08-15T03:28:35.758Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: email_run_end - runId=d85fb84c-a98a-469d-b9da-69ca7941e52f ok=true durationMs=44 cursorUpdated=true
+2026-08-15T03:28:41.028Z info [pid:30] proxima - trace:local-30-1786505067235-w3ps2u [undefined] redisLockCycle fail key=email-interval-key, value=0.15981639156315264 time=50000 start=1786764521028
+2026-08-15T03:28:49.540Z info [pid:42] proxima - trace:local-42-1786505076384-k8cumy [undefined] redisLockCycle fail key=email-interval-key, value=0.9430356000847354 time=50000 start=1786764529540
+2026-08-15T03:29:04.331Z info [pid:54] proxima - trace:local-54-1786505091444-u8gsqw [undefined] redisLockCycle fail key=email-interval-key, value=0.908558897258937 time=50000 start=1786764544331
+2026-08-15T03:29:35.673Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [undefined] redisLockCycle success key=email-interval-key, value=0.7727773287985668 time=50000 start=1786764575673
+2026-08-15T03:29:35.673Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb start EmailIntervalKey extra:{ args: [ 'email-interval-key', '0.7727773287985668', 50000 ] }
+2026-08-15T03:29:35.690Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - start interval task
+2026-08-15T03:29:35.693Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:29:35.693Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - not reach time interval, remaining 119990ms
+2026-08-15T03:29:35.704Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - start interval task
+2026-08-15T03:29:35.706Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - start interval task
+2026-08-15T03:29:35.708Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - start interval task
+2026-08-15T03:29:35.710Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - start interval task
+2026-08-15T03:29:35.712Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - start interval task
+2026-08-15T03:29:35.714Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:29:35.714Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:29:35.715Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:29:35.715Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:29:35.716Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - start interval task
+2026-08-15T03:29:35.718Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - start interval task
+2026-08-15T03:29:35.721Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - start interval task
+2026-08-15T03:29:35.722Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - not reach time interval, remaining 59986ms
+2026-08-15T03:29:35.722Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - not reach time interval, remaining 239996ms
+2026-08-15T03:29:35.722Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - not reach time interval, remaining 179984ms
+2026-08-15T03:29:35.722Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - not reach time interval, remaining 239990ms
+2026-08-15T03:29:35.723Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:29:35.724Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:29:35.724Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:29:35.725Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - not reach time interval, remaining 119991ms
+2026-08-15T03:29:35.725Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - not reach time interval, remaining 179983ms
+2026-08-15T03:29:35.725Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:29:35.726Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - not reach time interval, remaining 179998ms
+2026-08-15T03:29:35.726Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - not reach time interval, remaining 119993ms
+2026-08-15T03:29:41.037Z info [pid:30] proxima - trace:local-30-1786505067235-w3ps2u [undefined] redisLockCycle fail key=email-interval-key, value=0.29161561264676417 time=50000 start=1786764581037
+2026-08-15T03:29:49.544Z info [pid:42] proxima - trace:local-42-1786505076384-k8cumy [undefined] redisLockCycle fail key=email-interval-key, value=0.07204610354209717 time=50000 start=1786764589544
+2026-08-15T03:30:04.331Z info [pid:54] proxima - trace:local-54-1786505091444-u8gsqw [undefined] redisLockCycle fail key=email-interval-key, value=0.834647228694011 time=50000 start=1786764604331
+2026-08-15T03:30:35.676Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [undefined] redisLockCycle success key=email-interval-key, value=0.28913119853105484 time=50000 start=1786764635676
+2026-08-15T03:30:35.676Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb start EmailIntervalKey extra:{ args: [ 'email-interval-key', '0.28913119853105484', 50000 ] }
+2026-08-15T03:30:35.696Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - start interval task
+2026-08-15T03:30:35.699Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:30:35.699Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - not reach time interval, remaining 59984ms
+2026-08-15T03:30:35.708Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - start interval task
+2026-08-15T03:30:35.710Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - start interval task
+2026-08-15T03:30:35.713Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - start interval task
+2026-08-15T03:30:35.714Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:30:35.715Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:30:35.716Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - start interval task
+2026-08-15T03:30:35.720Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - start interval task
+2026-08-15T03:30:35.721Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - not reach time interval, remaining 179997ms
+2026-08-15T03:30:35.721Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:30:35.722Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - start interval task
+2026-08-15T03:30:35.724Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:30:35.724Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - executing task, time range: 300013ms (Sat Aug 15 2026 11:25:35 GMT+0800 (China Standard Time) to Sat Aug 15 2026 11:30:35 GMT+0800 (China Standard Time))
+2026-08-15T03:30:35.724Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: email_run_start - runId=4cac882a-6731-4e71-899f-c575d1bd4d8b prevActiveTime=1786764335708 effectivePrevActiveTime=1786764335708 now=1786764635721 isAggregation=true intervalMs=300000
+2026-08-15T03:30:35.725Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - not reach time interval, remaining 119981ms
+2026-08-15T03:30:35.725Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:30:35.727Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:30:35.728Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - not reach time interval, remaining 59991ms
+2026-08-15T03:30:35.728Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - not reach time interval, remaining 179984ms
+2026-08-15T03:30:35.728Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - not reach time interval, remaining 119980ms
+2026-08-15T03:30:35.732Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - start interval task
+2026-08-15T03:30:35.734Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - start interval task
+2026-08-15T03:30:35.737Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:30:35.739Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - not reach time interval, remaining 119985ms
+2026-08-15T03:30:35.739Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:30:35.740Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: handleBetweenItem - found 0 items
+2026-08-15T03:30:35.740Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - task completed successfully
+2026-08-15T03:30:35.740Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: email_run_end - runId=4cac882a-6731-4e71-899f-c575d1bd4d8b ok=true durationMs=16 cursorUpdated=true
+2026-08-15T03:30:35.740Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - not reach time interval, remaining 59976ms
+2026-08-15T03:30:41.044Z info [pid:30] proxima - trace:local-30-1786505067235-w3ps2u [undefined] redisLockCycle fail key=email-interval-key, value=0.34629621864592686 time=50000 start=1786764641044
+2026-08-15T03:30:49.548Z info [pid:42] proxima - trace:local-42-1786505076384-k8cumy [undefined] redisLockCycle fail key=email-interval-key, value=0.6143767230039539 time=50000 start=1786764649548
+2026-08-15T03:31:04.330Z info [pid:54] proxima - trace:local-54-1786505091444-u8gsqw [undefined] redisLockCycle fail key=email-interval-key, value=0.6411280152911556 time=50000 start=1786764664330
+2026-08-15T03:31:35.680Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [undefined] redisLockCycle success key=email-interval-key, value=0.9029219920587925 time=50000 start=1786764695680
+2026-08-15T03:31:35.680Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb start EmailIntervalKey extra:{ args: [ 'email-interval-key', '0.9029219920587925', 50000 ] }
+2026-08-15T03:31:35.697Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - start interval task
+2026-08-15T03:31:35.700Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:31:35.701Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - executing task, time range: 300018ms (Sat Aug 15 2026 11:26:35 GMT+0800 (China Standard Time) to Sat Aug 15 2026 11:31:35 GMT+0800 (China Standard Time))
+2026-08-15T03:31:35.701Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: email_run_start - runId=54fd2326-fcd0-4425-8186-41ed9e308045 prevActiveTime=1786764395683 effectivePrevActiveTime=1786764395683 now=1786764695701 isAggregation=true intervalMs=300000
+2026-08-15T03:31:35.712Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - start interval task
+2026-08-15T03:31:35.717Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:31:35.718Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - start interval task
+2026-08-15T03:31:35.720Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - start interval task
+2026-08-15T03:31:35.722Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - start interval task
+2026-08-15T03:31:35.723Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - not reach time interval, remaining 59983ms
+2026-08-15T03:31:35.724Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:31:35.725Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: handleBetweenItem - found 0 items
+2026-08-15T03:31:35.725Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - task completed successfully
+2026-08-15T03:31:35.725Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: email_run_end - runId=54fd2326-fcd0-4425-8186-41ed9e308045 ok=true durationMs=24 cursorUpdated=true
+2026-08-15T03:31:35.726Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:31:35.726Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:31:35.727Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - not reach time interval, remaining 239995ms
+2026-08-15T03:31:35.728Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - start interval task
+2026-08-15T03:31:35.730Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - executing task, time range: 300008ms (Sat Aug 15 2026 11:26:35 GMT+0800 (China Standard Time) to Sat Aug 15 2026 11:31:35 GMT+0800 (China Standard Time))
+2026-08-15T03:31:35.730Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: email_run_start - runId=29efba79-924b-47f7-ac8a-36f8ad01cd52 prevActiveTime=1786764395719 effectivePrevActiveTime=1786764395719 now=1786764695727 isAggregation=true intervalMs=300000
+2026-08-15T03:31:35.730Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - not reach time interval, remaining 119988ms
+2026-08-15T03:31:35.731Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:31:35.732Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - start interval task
+2026-08-15T03:31:35.734Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - not reach time interval, remaining 119978ms
+2026-08-15T03:31:35.735Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:31:35.736Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - start interval task
+2026-08-15T03:31:35.738Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - not reach time interval, remaining 59986ms
+2026-08-15T03:31:35.739Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - start interval task
+2026-08-15T03:31:35.741Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:31:35.741Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - not reach time interval, remaining 59967ms
+2026-08-15T03:31:35.742Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:31:35.743Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - executing task, time range: 300026ms (Sat Aug 15 2026 11:26:35 GMT+0800 (China Standard Time) to Sat Aug 15 2026 11:31:35 GMT+0800 (China Standard Time))
+2026-08-15T03:31:35.743Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: email_run_start - runId=59907031-2f30-4b26-bd54-9dd91b877ca6 prevActiveTime=1786764395716 effectivePrevActiveTime=1786764395716 now=1786764695742 isAggregation=true intervalMs=300000
+2026-08-15T03:31:35.755Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: handleBetweenItem - found 0 items
+2026-08-15T03:31:35.755Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - task completed successfully
+2026-08-15T03:31:35.755Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: email_run_end - runId=59907031-2f30-4b26-bd54-9dd91b877ca6 ok=true durationMs=12 cursorUpdated=true
+2026-08-15T03:31:35.777Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: handleBetweenItem - found 0 items
+2026-08-15T03:31:35.777Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - task completed successfully
+2026-08-15T03:31:35.778Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: email_run_end - runId=29efba79-924b-47f7-ac8a-36f8ad01cd52 ok=true durationMs=48 cursorUpdated=true
+2026-08-15T03:31:41.052Z info [pid:30] proxima - trace:local-30-1786505067235-w3ps2u [undefined] redisLockCycle fail key=email-interval-key, value=0.5604834097799928 time=50000 start=1786764701052
+2026-08-15T03:31:49.553Z info [pid:42] proxima - trace:local-42-1786505076384-k8cumy [undefined] redisLockCycle fail key=email-interval-key, value=0.8463766982789941 time=50000 start=1786764709552
+2026-08-15T03:32:04.330Z info [pid:54] proxima - trace:local-54-1786505091444-u8gsqw [undefined] redisLockCycle fail key=email-interval-key, value=0.3473186685630434 time=50000 start=1786764724330
+2026-08-15T03:32:35.684Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [undefined] redisLockCycle success key=email-interval-key, value=0.14236289132595414 time=50000 start=1786764755684
+2026-08-15T03:32:35.684Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb start EmailIntervalKey extra:{ args: [ 'email-interval-key', '0.14236289132595414', 50000 ] }
+2026-08-15T03:32:35.703Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - start interval task
+2026-08-15T03:32:35.707Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:32:35.708Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - not reach time interval, remaining 239993ms
+2026-08-15T03:32:35.715Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - start interval task
+2026-08-15T03:32:35.720Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - start interval task
+2026-08-15T03:32:35.723Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:32:35.724Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - start interval task
+2026-08-15T03:32:35.726Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - start interval task
+2026-08-15T03:32:35.727Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - start interval task
+2026-08-15T03:32:35.729Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - start interval task
+2026-08-15T03:32:35.731Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - start interval task
+2026-08-15T03:32:35.732Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - not reach time interval, remaining 59986ms
+2026-08-15T03:32:35.734Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:32:35.734Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:32:35.735Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:32:35.736Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:32:35.737Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - start interval task
+2026-08-15T03:32:35.738Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:32:35.738Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - not reach time interval, remaining 239989ms
+2026-08-15T03:32:35.738Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - not reach time interval, remaining 179983ms
+2026-08-15T03:32:35.739Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - not reach time interval, remaining 240003ms
+2026-08-15T03:32:35.739Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:32:35.740Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:32:35.740Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - executing task, time range: 300031ms (Sat Aug 15 2026 11:27:35 GMT+0800 (China Standard Time) to Sat Aug 15 2026 11:32:35 GMT+0800 (China Standard Time))
+2026-08-15T03:32:35.740Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: email_run_start - runId=ac9d8603-3cf8-4c48-81a0-7666f1ef0906 prevActiveTime=1786764455708 effectivePrevActiveTime=1786764455708 now=1786764755739 isAggregation=true intervalMs=300000
+2026-08-15T03:32:35.741Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - not reach time interval, remaining 59971ms
+2026-08-15T03:32:35.741Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - executing task, time range: 300035ms (Sat Aug 15 2026 11:27:35 GMT+0800 (China Standard Time) to Sat Aug 15 2026 11:32:35 GMT+0800 (China Standard Time))
+2026-08-15T03:32:35.742Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: email_run_start - runId=09d2afe2-097f-4243-9189-c9446b99b1ca prevActiveTime=1786764455706 effectivePrevActiveTime=1786764455706 now=1786764755741 isAggregation=true intervalMs=300000
+2026-08-15T03:32:35.742Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - executing task, time range: 300018ms (Sat Aug 15 2026 11:27:35 GMT+0800 (China Standard Time) to Sat Aug 15 2026 11:32:35 GMT+0800 (China Standard Time))
+2026-08-15T03:32:35.742Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: email_run_start - runId=eae8b403-1958-4422-8f47-07b776eacb30 prevActiveTime=1786764455724 effectivePrevActiveTime=1786764455724 now=1786764755742 isAggregation=true intervalMs=300000
+2026-08-15T03:32:35.754Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: handleBetweenItem - found 0 items
+2026-08-15T03:32:35.754Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - task completed successfully
+2026-08-15T03:32:35.754Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: email_run_end - runId=09d2afe2-097f-4243-9189-c9446b99b1ca ok=true durationMs=12 cursorUpdated=true
+2026-08-15T03:32:35.756Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: handleBetweenItem - found 0 items
+2026-08-15T03:32:35.756Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - task completed successfully
+2026-08-15T03:32:35.756Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: email_run_end - runId=eae8b403-1958-4422-8f47-07b776eacb30 ok=true durationMs=13 cursorUpdated=true
+2026-08-15T03:32:35.757Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: handleBetweenItem - found 0 items
+2026-08-15T03:32:35.757Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - task completed successfully
+2026-08-15T03:32:35.757Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: email_run_end - runId=ac9d8603-3cf8-4c48-81a0-7666f1ef0906 ok=true durationMs=17 cursorUpdated=true
+2026-08-15T03:32:41.060Z info [pid:30] proxima - trace:local-30-1786505067235-w3ps2u [undefined] redisLockCycle fail key=email-interval-key, value=0.18471419465651762 time=50000 start=1786764761060
+2026-08-15T03:32:49.556Z info [pid:42] proxima - trace:local-42-1786505076384-k8cumy [undefined] redisLockCycle fail key=email-interval-key, value=0.971656410645138 time=50000 start=1786764769556
+2026-08-15T03:33:04.330Z info [pid:54] proxima - trace:local-54-1786505091444-u8gsqw [undefined] redisLockCycle fail key=email-interval-key, value=0.3557095116824368 time=50000 start=1786764784330
+2026-08-15T03:33:35.685Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [undefined] redisLockCycle success key=email-interval-key, value=0.0762865908948338 time=50000 start=1786764815684
+2026-08-15T03:33:35.685Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb start EmailIntervalKey extra:{ args: [ 'email-interval-key', '0.0762865908948338', 50000 ] }
+2026-08-15T03:33:35.701Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - start interval task
+2026-08-15T03:33:35.703Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:33:35.704Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - not reach time interval, remaining 179997ms
+2026-08-15T03:33:35.716Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - start interval task
+2026-08-15T03:33:35.718Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - start interval task
+2026-08-15T03:33:35.720Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - start interval task
+2026-08-15T03:33:35.721Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - start interval task
+2026-08-15T03:33:35.723Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - start interval task
+2026-08-15T03:33:35.725Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:33:35.726Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:33:35.726Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:33:35.727Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:33:35.729Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - start interval task
+2026-08-15T03:33:35.730Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:33:35.731Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - start interval task
+2026-08-15T03:33:35.732Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - not reach time interval, remaining 179995ms
+2026-08-15T03:33:35.732Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - not reach time interval, remaining 119989ms
+2026-08-15T03:33:35.732Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - not reach time interval, remaining 240010ms
+2026-08-15T03:33:35.733Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:33:35.733Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:33:35.734Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - executing task, time range: 300020ms (Sat Aug 15 2026 11:28:35 GMT+0800 (China Standard Time) to Sat Aug 15 2026 11:33:35 GMT+0800 (China Standard Time))
+2026-08-15T03:33:35.734Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: email_run_start - runId=7c110bfa-09d5-46d8-8bb8-d544f84f7fcd prevActiveTime=1786764515712 effectivePrevActiveTime=1786764515712 now=1786764815732 isAggregation=true intervalMs=300000
+2026-08-15T03:33:35.734Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - executing task, time range: 300014ms (Sat Aug 15 2026 11:28:35 GMT+0800 (China Standard Time) to Sat Aug 15 2026 11:33:35 GMT+0800 (China Standard Time))
+2026-08-15T03:33:35.734Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: email_run_start - runId=86f5e5fb-fb34-48fb-9e1f-405235407c41 prevActiveTime=1786764515718 effectivePrevActiveTime=1786764515718 now=1786764815732 isAggregation=true intervalMs=300000
+2026-08-15T03:33:35.734Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - not reach time interval, remaining 240007ms
+2026-08-15T03:33:35.736Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - start interval task
+2026-08-15T03:33:35.738Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - not reach time interval, remaining 180004ms
+2026-08-15T03:33:35.739Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:33:35.740Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - not reach time interval, remaining 239999ms
+2026-08-15T03:33:35.745Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: handleBetweenItem - found 0 items
+2026-08-15T03:33:35.745Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - task completed successfully
+2026-08-15T03:33:35.745Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: email_run_end - runId=86f5e5fb-fb34-48fb-9e1f-405235407c41 ok=true durationMs=11 cursorUpdated=true
+2026-08-15T03:33:35.779Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: handleBetweenItem - found 0 items
+2026-08-15T03:33:35.779Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - task completed successfully
+2026-08-15T03:33:35.779Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: email_run_end - runId=7c110bfa-09d5-46d8-8bb8-d544f84f7fcd ok=true durationMs=45 cursorUpdated=true
+2026-08-15T03:33:41.068Z info [pid:30] proxima - trace:local-30-1786505067235-w3ps2u [undefined] redisLockCycle fail key=email-interval-key, value=0.6487338571487756 time=50000 start=1786764821068
+2026-08-15T03:33:49.561Z info [pid:42] proxima - trace:local-42-1786505076384-k8cumy [undefined] redisLockCycle fail key=email-interval-key, value=0.5776936653746142 time=50000 start=1786764829561
+2026-08-15T03:34:04.330Z info [pid:54] proxima - trace:local-54-1786505091444-u8gsqw [undefined] redisLockCycle fail key=email-interval-key, value=0.6090937368784906 time=50000 start=1786764844330
+2026-08-15T03:34:35.688Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [undefined] redisLockCycle success key=email-interval-key, value=0.18517838550839516 time=50000 start=1786764875688
+2026-08-15T03:34:35.689Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb start EmailIntervalKey extra:{ args: [ 'email-interval-key', '0.18517838550839516', 50000 ] }
+2026-08-15T03:34:35.706Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - start interval task
+2026-08-15T03:34:35.708Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:34:35.708Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - not reach time interval, remaining 119993ms
+2026-08-15T03:34:35.718Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - start interval task
+2026-08-15T03:34:35.720Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - start interval task
+2026-08-15T03:34:35.721Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - start interval task
+2026-08-15T03:34:35.724Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - start interval task
+2026-08-15T03:34:35.725Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:34:35.725Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:34:35.726Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:34:35.727Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - start interval task
+2026-08-15T03:34:35.728Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - start interval task
+2026-08-15T03:34:35.729Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - not reach time interval, remaining 119998ms
+2026-08-15T03:34:35.730Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - not reach time interval, remaining 240002ms
+2026-08-15T03:34:35.730Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - not reach time interval, remaining 59991ms
+2026-08-15T03:34:35.731Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:34:35.732Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:34:35.732Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - not reach time interval, remaining 180007ms
+2026-08-15T03:34:35.732Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:34:35.733Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - not reach time interval, remaining 239999ms
+2026-08-15T03:34:35.733Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - not reach time interval, remaining 180008ms
+2026-08-15T03:34:35.736Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - start interval task
+2026-08-15T03:34:35.737Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - start interval task
+2026-08-15T03:34:35.738Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:34:35.739Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:34:35.739Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - not reach time interval, remaining 120003ms
+2026-08-15T03:34:35.740Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - not reach time interval, remaining 180002ms
+2026-08-15T03:34:41.076Z info [pid:30] proxima - trace:local-30-1786505067235-w3ps2u [undefined] redisLockCycle fail key=email-interval-key, value=0.1249351010810239 time=50000 start=1786764881076
+2026-08-15T03:34:49.565Z info [pid:42] proxima - trace:local-42-1786505076384-k8cumy [undefined] redisLockCycle fail key=email-interval-key, value=0.2821868822803837 time=50000 start=1786764889565
+2026-08-15T03:35:04.331Z info [pid:54] proxima - trace:local-54-1786505091444-u8gsqw [undefined] redisLockCycle fail key=email-interval-key, value=0.00851962100638326 time=50000 start=1786764904331
+2026-08-15T03:35:35.692Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [undefined] redisLockCycle success key=email-interval-key, value=0.5711143829415259 time=50000 start=1786764935692
+2026-08-15T03:35:35.692Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb start EmailIntervalKey extra:{ args: [ 'email-interval-key', '0.5711143829415259', 50000 ] }
+2026-08-15T03:35:35.710Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - start interval task
+2026-08-15T03:35:35.712Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:35:35.713Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - not reach time interval, remaining 59988ms
+2026-08-15T03:35:35.723Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - start interval task
+2026-08-15T03:35:35.726Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - start interval task
+2026-08-15T03:35:35.729Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - start interval task
+2026-08-15T03:35:35.730Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:35:35.731Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:35:35.732Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - start interval task
+2026-08-15T03:35:35.733Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - start interval task
+2026-08-15T03:35:35.736Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - start interval task
+2026-08-15T03:35:35.738Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - start interval task
+2026-08-15T03:35:35.739Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - not reach time interval, remaining 179993ms
+2026-08-15T03:35:35.740Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:35:35.740Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:35:35.741Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:35:35.741Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - start interval task
+2026-08-15T03:35:35.743Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:35:35.743Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - executing task, time range: 300018ms (Sat Aug 15 2026 11:30:35 GMT+0800 (China Standard Time) to Sat Aug 15 2026 11:35:35 GMT+0800 (China Standard Time))
+2026-08-15T03:35:35.743Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: email_run_start - runId=c4f09581-c92a-41dc-b009-0223d79e8db4 prevActiveTime=1786764635721 effectivePrevActiveTime=1786764635721 now=1786764935739 isAggregation=true intervalMs=300000
+2026-08-15T03:35:35.744Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - not reach time interval, remaining 119997ms
+2026-08-15T03:35:35.744Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - not reach time interval, remaining 119995ms
+2026-08-15T03:35:35.744Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - not reach time interval, remaining 59998ms
+2026-08-15T03:35:35.745Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:35:35.746Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:35:35.747Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - not reach time interval, remaining 119995ms
+2026-08-15T03:35:35.747Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - not reach time interval, remaining 59980ms
+2026-08-15T03:35:35.747Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - not reach time interval, remaining 179985ms
+2026-08-15T03:35:35.751Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: handleBetweenItem - found 0 items
+2026-08-15T03:35:35.752Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - task completed successfully
+2026-08-15T03:35:35.752Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: email_run_end - runId=c4f09581-c92a-41dc-b009-0223d79e8db4 ok=true durationMs=9 cursorUpdated=true
+2026-08-15T03:35:41.084Z info [pid:30] proxima - trace:local-30-1786505067235-w3ps2u [undefined] redisLockCycle fail key=email-interval-key, value=0.70905590635857 time=50000 start=1786764941084
+2026-08-15T03:35:49.568Z info [pid:42] proxima - trace:local-42-1786505076384-k8cumy [undefined] redisLockCycle fail key=email-interval-key, value=0.9581420638541864 time=50000 start=1786764949568
+2026-08-15T03:36:04.330Z info [pid:54] proxima - trace:local-54-1786505091444-u8gsqw [undefined] redisLockCycle fail key=email-interval-key, value=0.3805925811994487 time=50000 start=1786764964330
+2026-08-15T03:36:35.694Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [undefined] redisLockCycle success key=email-interval-key, value=0.04587770477126596 time=50000 start=1786764995694
+2026-08-15T03:36:35.694Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb start EmailIntervalKey extra:{ args: [ 'email-interval-key', '0.04587770477126596', 50000 ] }
+2026-08-15T03:36:35.713Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - start interval task
+2026-08-15T03:36:35.715Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:36:35.718Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - executing task, time range: 300016ms (Sat Aug 15 2026 11:31:35 GMT+0800 (China Standard Time) to Sat Aug 15 2026 11:36:35 GMT+0800 (China Standard Time))
+2026-08-15T03:36:35.718Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: email_run_start - runId=4b2c6c9c-750e-4fb7-8f72-640c640f37c9 prevActiveTime=1786764695701 effectivePrevActiveTime=1786764695701 now=1786764995717 isAggregation=true intervalMs=300000
+2026-08-15T03:36:35.727Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - start interval task
+2026-08-15T03:36:35.733Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - start interval task
+2026-08-15T03:36:35.734Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:36:35.736Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - start interval task
+2026-08-15T03:36:35.737Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - start interval task
+2026-08-15T03:36:35.741Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - start interval task
+2026-08-15T03:36:35.743Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - not reach time interval, remaining 239996ms
+2026-08-15T03:36:35.743Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: handleBetweenItem - found 0 items
+2026-08-15T03:36:35.743Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - task completed successfully
+2026-08-15T03:36:35.743Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: email_run_end - runId=4b2c6c9c-750e-4fb7-8f72-640c640f37c9 ok=true durationMs=25 cursorUpdated=true
+2026-08-15T03:36:35.744Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:36:35.745Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:36:35.745Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - start interval task
+2026-08-15T03:36:35.747Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:36:35.747Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - not reach time interval, remaining 119985ms
+2026-08-15T03:36:35.748Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:36:35.749Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:36:35.749Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - executing task, time range: 300020ms (Sat Aug 15 2026 11:31:35 GMT+0800 (China Standard Time) to Sat Aug 15 2026 11:36:35 GMT+0800 (China Standard Time))
+2026-08-15T03:36:35.749Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: email_run_start - runId=a7be3f7b-3e14-453a-81cc-92ec9bc7e771 prevActiveTime=1786764695727 effectivePrevActiveTime=1786764695727 now=1786764995747 isAggregation=true intervalMs=300000
+2026-08-15T03:36:35.750Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - not reach time interval, remaining 119982ms
+2026-08-15T03:36:35.751Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - start interval task
+2026-08-15T03:36:35.753Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - not reach time interval, remaining 59988ms
+2026-08-15T03:36:35.753Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - not reach time interval, remaining 59989ms
+2026-08-15T03:36:35.754Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:36:35.755Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - start interval task
+2026-08-15T03:36:35.756Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - not reach time interval, remaining 59983ms
+2026-08-15T03:36:35.757Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:36:35.757Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - executing task, time range: 300015ms (Sat Aug 15 2026 11:31:35 GMT+0800 (China Standard Time) to Sat Aug 15 2026 11:36:35 GMT+0800 (China Standard Time))
+2026-08-15T03:36:35.758Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: email_run_start - runId=22485200-ea98-41a3-ae1b-b310a7cd9e29 prevActiveTime=1786764695742 effectivePrevActiveTime=1786764695742 now=1786764995757 isAggregation=true intervalMs=300000
+2026-08-15T03:36:35.767Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: handleBetweenItem - found 0 items
+2026-08-15T03:36:35.768Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - task completed successfully
+2026-08-15T03:36:35.768Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: email_run_end - runId=22485200-ea98-41a3-ae1b-b310a7cd9e29 ok=true durationMs=10 cursorUpdated=true
+2026-08-15T03:36:35.804Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: handleBetweenItem - found 0 items
+2026-08-15T03:36:35.805Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - task completed successfully
+2026-08-15T03:36:35.805Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: email_run_end - runId=a7be3f7b-3e14-453a-81cc-92ec9bc7e771 ok=true durationMs=55 cursorUpdated=true
+2026-08-15T03:36:41.091Z info [pid:30] proxima - trace:local-30-1786505067235-w3ps2u [undefined] redisLockCycle fail key=email-interval-key, value=0.6165771743532835 time=50000 start=1786765001091
+2026-08-15T03:36:49.572Z info [pid:42] proxima - trace:local-42-1786505076384-k8cumy [undefined] redisLockCycle fail key=email-interval-key, value=0.08729406221587355 time=50000 start=1786765009572
+2026-08-15T03:37:04.331Z info [pid:54] proxima - trace:local-54-1786505091444-u8gsqw [undefined] redisLockCycle fail key=email-interval-key, value=0.13840761789159683 time=50000 start=1786765024330
+2026-08-15T03:37:35.696Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [undefined] redisLockCycle success key=email-interval-key, value=0.14444626138699346 time=50000 start=1786765055696
+2026-08-15T03:37:35.696Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb start EmailIntervalKey extra:{ args: [ 'email-interval-key', '0.14444626138699346', 50000 ] }
+2026-08-15T03:37:35.715Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - start interval task
+2026-08-15T03:37:35.717Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:37:35.719Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi]: startIntervalTask - not reach time interval, remaining 239998ms
+2026-08-15T03:37:35.729Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - start interval task
+2026-08-15T03:37:35.731Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - start interval task
+2026-08-15T03:37:35.733Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - start interval task
+2026-08-15T03:37:35.734Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - start interval task
+2026-08-15T03:37:35.736Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - start interval task
+2026-08-15T03:37:35.737Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:37:35.738Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:37:35.738Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:37:35.740Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:37:35.741Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - start interval task
+2026-08-15T03:37:35.742Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [osc]: startIntervalTask - not reach time interval, remaining 240005ms
+2026-08-15T03:37:35.742Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team]: startIntervalTask - not reach time interval, remaining 59990ms
+2026-08-15T03:37:35.742Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [omkuai]: startIntervalTask - not reach time interval, remaining 59990ms
+2026-08-15T03:37:35.743Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:37:35.743Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - executing task, time range: 300003ms (Sat Aug 15 2026 11:32:35 GMT+0800 (China Standard Time) to Sat Aug 15 2026 11:37:35 GMT+0800 (China Standard Time))
+2026-08-15T03:37:35.743Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: email_run_start - runId=34700dd4-74fb-4c21-b1a2-7dd7b3f699af prevActiveTime=1786764755739 effectivePrevActiveTime=1786764755739 now=1786765055742 isAggregation=true intervalMs=300000
+2026-08-15T03:37:35.744Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:37:35.745Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [team1]: startIntervalTask - not reach time interval, remaining 240012ms
+2026-08-15T03:37:35.746Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - executing task, time range: 300004ms (Sat Aug 15 2026 11:32:35 GMT+0800 (China Standard Time) to Sat Aug 15 2026 11:37:35 GMT+0800 (China Standard Time))
+2026-08-15T03:37:35.746Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: email_run_start - runId=63e16f2c-0803-4b28-a11f-72a18de57529 prevActiveTime=1786764755741 effectivePrevActiveTime=1786764755741 now=1786765055745 isAggregation=true intervalMs=300000
+2026-08-15T03:37:35.752Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - start interval task
+2026-08-15T03:37:35.754Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:37:35.755Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - start interval task
+2026-08-15T03:37:35.759Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - executing task, time range: 300015ms (Sat Aug 15 2026 11:32:35 GMT+0800 (China Standard Time) to Sat Aug 15 2026 11:37:35 GMT+0800 (China Standard Time))
+2026-08-15T03:37:35.759Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: email_run_start - runId=449b294e-9db2-436e-a444-3cf89edf6bf6 prevActiveTime=1786764755742 effectivePrevActiveTime=1786764755742 now=1786765055757 isAggregation=true intervalMs=300000
+2026-08-15T03:37:35.760Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - interval configured: 300000ms, aggregation: true
+2026-08-15T03:37:35.761Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: handleBetweenItem - found 0 items
+2026-08-15T03:37:35.761Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: startIntervalTask - task completed successfully
+2026-08-15T03:37:35.761Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [teamceshi2]: email_run_end - runId=63e16f2c-0803-4b28-a11f-72a18de57529 ok=true durationMs=15 cursorUpdated=true
+2026-08-15T03:37:35.762Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc01]: startIntervalTask - not reach time interval, remaining 179977ms
+2026-08-15T03:37:35.763Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: handleBetweenItem - found 0 items
+2026-08-15T03:37:35.763Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: startIntervalTask - task completed successfully
+2026-08-15T03:37:35.763Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [dsfsdf]: email_run_end - runId=34700dd4-74fb-4c21-b1a2-7dd7b3f699af ok=true durationMs=20 cursorUpdated=true
+2026-08-15T03:37:35.767Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: handleBetweenItem - found 0 items
+2026-08-15T03:37:35.767Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: startIntervalTask - task completed successfully
+2026-08-15T03:37:35.767Z info [pid:18] proxima - trace:local-18-1786505061522-salmvb [nkc]: email_run_end - runId=449b294e-9db2-436e-a444-3cf89edf6bf6 ok=true durationMs=8 cursorUpdated=true
+2026-08-15T03:37:41.100Z info [pid:30] proxima - trace:local-30-1786505067235-w3ps2u [undefined] redisLockCycle fail key=email-interval-key, value=0.02569379602114541 time=50000 start=1786765061100
+2026-08-15T03:37:49.576Z info [pid:42] proxima - trace:local-42-1786505076384-k8cumy [undefined] redisLockCycle fail key=email-interval-key, value=0.660229240581558 time=50000 start=1786765069576
+2026-08-15T03:38:04.331Z info [pid:54] proxima - trace:local-54-1786505091444-u8gsqw [undefined] redisLockCycle fail key=email-interval-key, value=0.8480838067408264 time=50000 start=1786765084331
+
+
+===== pod: gitee-team-core-7c49b4bdf8-hzgb2 =====
+2026-08-15T03:28:08.640Z info [pid:42] proxima - trace:local-42-1786505095021-849ypy [undefined] redisLockCycle fail key=email-interval-key, value=0.9251055903864172 time=50000 start=1786764488640
+2026-08-15T03:28:22.073Z info [pid:54] proxima - trace:local-54-1786505109976-6jqn6r [undefined] redisLockCycle fail key=email-interval-key, value=0.917828007558555 time=50000 start=1786764502073
+2026-08-15T03:28:35.066Z info [pid:30] proxima - trace:3592ea47-2f27-48c4-89ee-9ecb57a81c09 [teamceshi2] redisLockCycle fail key=cache-store-check-lock:teamceshi2, value=gitee-team-core-7c49b4bdf8-hzgb2-1-30 time=3240000 start=1786764515066
+2026-08-15T03:28:35.089Z info [pid:54] proxima - trace:73934f85-4b7d-4e71-ad1d-529edc7dafcc [teamceshi2] redisLockCycle fail key=cache-store-check-lock:teamceshi2, value=gitee-team-core-7c49b4bdf8-hzgb2-3-54 time=3240000 start=1786764515089
+2026-08-15T03:28:50.554Z info [pid:18] proxima - trace:local-18-1786505079709-l1dtee [undefined] redisLockCycle fail key=email-interval-key, value=0.7217617088478235 time=50000 start=1786764530554
+2026-08-15T03:28:58.320Z info [pid:30] proxima - trace:local-30-1786505085698-adl6ll [undefined] redisLockCycle fail key=email-interval-key, value=0.63206370205208 time=50000 start=1786764538320
+2026-08-15T03:29:08.650Z info [pid:42] proxima - trace:local-42-1786505095021-849ypy [undefined] redisLockCycle fail key=email-interval-key, value=0.6560382821989444 time=50000 start=1786764548650
+2026-08-15T03:29:22.081Z info [pid:54] proxima - trace:local-54-1786505109976-6jqn6r [undefined] redisLockCycle fail key=email-interval-key, value=0.43115916851212444 time=50000 start=1786764562081
+2026-08-15T03:29:49.144Z info [pid:18] proxima - trace:8b4aa24e-acce-4767-a3ba-2d1ed560cb5e [teamceshi2] redisLockCycle fail key=cache-store-check-lock:teamceshi2, value=gitee-team-core-7c49b4bdf8-hzgb2-0-18 time=3240000 start=1786764589144
+2026-08-15T03:29:49.587Z info [pid:42] proxima - trace:c590b40c-fc52-438a-8fa4-352815a3b9f4 [teamceshi2] redisLockCycle fail key=cache-store-check-lock:teamceshi2, value=gitee-team-core-7c49b4bdf8-hzgb2-2-42 time=3240000 start=1786764589587
+2026-08-15T03:29:50.555Z info [pid:18] proxima - trace:local-18-1786505079709-l1dtee [undefined] redisLockCycle fail key=email-interval-key, value=0.6692333499949455 time=50000 start=1786764590555
+2026-08-15T03:29:58.319Z info [pid:30] proxima - trace:local-30-1786505085698-adl6ll [undefined] redisLockCycle fail key=email-interval-key, value=0.03511053837491107 time=50000 start=1786764598319
+2026-08-15T03:30:08.658Z info [pid:42] proxima - trace:local-42-1786505095021-849ypy [undefined] redisLockCycle fail key=email-interval-key, value=0.1237646157498965 time=50000 start=1786764608658
+2026-08-15T03:30:22.089Z info [pid:54] proxima - trace:local-54-1786505109976-6jqn6r [undefined] redisLockCycle fail key=email-interval-key, value=0.8383447320745547 time=50000 start=1786764622089
+2026-08-15T03:30:50.557Z info [pid:18] proxima - trace:local-18-1786505079709-l1dtee [undefined] redisLockCycle fail key=email-interval-key, value=0.2089898437731037 time=50000 start=1786764650557
+2026-08-15T03:30:58.319Z info [pid:30] proxima - trace:local-30-1786505085698-adl6ll [undefined] redisLockCycle fail key=email-interval-key, value=0.4188999841257959 time=50000 start=1786764658319
+2026-08-15T03:31:08.668Z info [pid:42] proxima - trace:local-42-1786505095021-849ypy [undefined] redisLockCycle fail key=email-interval-key, value=0.9553651031913968 time=50000 start=1786764668668
+2026-08-15T03:31:22.096Z info [pid:54] proxima - trace:local-54-1786505109976-6jqn6r [undefined] redisLockCycle fail key=email-interval-key, value=0.7089039150293278 time=50000 start=1786764682096
+2026-08-15T03:31:50.559Z info [pid:18] proxima - trace:local-18-1786505079709-l1dtee [undefined] redisLockCycle fail key=email-interval-key, value=0.8572570409883606 time=50000 start=1786764710559
+2026-08-15T03:31:58.319Z info [pid:30] proxima - trace:local-30-1786505085698-adl6ll [undefined] redisLockCycle fail key=email-interval-key, value=0.23697917136199342 time=50000 start=1786764718319
+2026-08-15T03:32:08.678Z info [pid:42] proxima - trace:local-42-1786505095021-849ypy [undefined] redisLockCycle fail key=email-interval-key, value=0.5774984922814093 time=50000 start=1786764728678
+2026-08-15T03:32:22.103Z info [pid:54] proxima - trace:local-54-1786505109976-6jqn6r [undefined] redisLockCycle fail key=email-interval-key, value=0.5455711969657719 time=50000 start=1786764742103
+2026-08-15T03:32:50.561Z info [pid:18] proxima - trace:local-18-1786505079709-l1dtee [undefined] redisLockCycle fail key=email-interval-key, value=0.5502996901440067 time=50000 start=1786764770561
+2026-08-15T03:32:58.319Z info [pid:30] proxima - trace:local-30-1786505085698-adl6ll [undefined] redisLockCycle fail key=email-interval-key, value=0.03149120490758328 time=50000 start=1786764778319
+2026-08-15T03:33:08.688Z info [pid:42] proxima - trace:local-42-1786505095021-849ypy [undefined] redisLockCycle fail key=email-interval-key, value=0.5039223312724064 time=50000 start=1786764788688
+2026-08-15T03:33:22.110Z info [pid:54] proxima - trace:local-54-1786505109976-6jqn6r [undefined] redisLockCycle fail key=email-interval-key, value=0.9242598797652813 time=50000 start=1786764802110
+2026-08-15T03:33:50.563Z info [pid:18] proxima - trace:local-18-1786505079709-l1dtee [undefined] redisLockCycle fail key=email-interval-key, value=0.09544221310999901 time=50000 start=1786764830563
+2026-08-15T03:33:58.329Z info [pid:30] proxima - trace:local-30-1786505085698-adl6ll [undefined] redisLockCycle fail key=email-interval-key, value=0.09122123010314509 time=50000 start=1786764838329
+2026-08-15T03:34:08.698Z info [pid:42] proxima - trace:local-42-1786505095021-849ypy [undefined] redisLockCycle fail key=email-interval-key, value=0.023312221805542377 time=50000 start=1786764848698
+2026-08-15T03:34:22.117Z info [pid:54] proxima - trace:local-54-1786505109976-6jqn6r [undefined] redisLockCycle fail key=email-interval-key, value=0.4660137968500916 time=50000 start=1786764862117
+2026-08-15T03:34:50.565Z info [pid:18] proxima - trace:local-18-1786505079709-l1dtee [undefined] redisLockCycle fail key=email-interval-key, value=0.3443360089599672 time=50000 start=1786764890565
+2026-08-15T03:34:58.339Z info [pid:30] proxima - trace:local-30-1786505085698-adl6ll [undefined] redisLockCycle fail key=email-interval-key, value=0.0015856172875416963 time=50000 start=1786764898339
+2026-08-15T03:35:08.708Z info [pid:42] proxima - trace:local-42-1786505095021-849ypy [undefined] redisLockCycle fail key=email-interval-key, value=0.8661787925727904 time=50000 start=1786764908708
+2026-08-15T03:35:22.124Z info [pid:54] proxima - trace:local-54-1786505109976-6jqn6r [undefined] redisLockCycle fail key=email-interval-key, value=0.0817046832420475 time=50000 start=1786764922124
+2026-08-15T03:35:50.566Z info [pid:18] proxima - trace:local-18-1786505079709-l1dtee [undefined] redisLockCycle fail key=email-interval-key, value=0.3798306144093818 time=50000 start=1786764950566
+2026-08-15T03:35:58.349Z info [pid:30] proxima - trace:local-30-1786505085698-adl6ll [undefined] redisLockCycle fail key=email-interval-key, value=0.0739129808904545 time=50000 start=1786764958349
+2026-08-15T03:36:08.718Z info [pid:42] proxima - trace:local-42-1786505095021-849ypy [undefined] redisLockCycle fail key=email-interval-key, value=0.7436181782240983 time=50000 start=1786764968718
+2026-08-15T03:36:22.131Z info [pid:54] proxima - trace:local-54-1786505109976-6jqn6r [undefined] redisLockCycle fail key=email-interval-key, value=0.8619311745306076 time=50000 start=1786764982131
+2026-08-15T03:36:50.567Z info [pid:18] proxima - trace:local-18-1786505079709-l1dtee [undefined] redisLockCycle fail key=email-interval-key, value=0.4401913032244228 time=50000 start=1786765010567
+2026-08-15T03:36:58.359Z info [pid:30] proxima - trace:local-30-1786505085698-adl6ll [undefined] redisLockCycle fail key=email-interval-key, value=0.3913046673999332 time=50000 start=1786765018359
+2026-08-15T03:37:08.728Z info [pid:42] proxima - trace:local-42-1786505095021-849ypy [undefined] redisLockCycle fail key=email-interval-key, value=0.0603966026504954 time=50000 start=1786765028728
+2026-08-15T03:37:22.138Z info [pid:54] proxima - trace:local-54-1786505109976-6jqn6r [undefined] redisLockCycle fail key=email-interval-key, value=0.9046806319754394 time=50000 start=1786765042138
+8/15/2026, 11:37:48 AM [-] pid:30 trace:9af30eb3-ef14-4333-bd09-447485c03fe0 POST /parse/classes/AppsWorkspace start
+2026-08-15T03:37:48.869Z info [pid:30] external_request - trace:9af30eb3-ef14-4333-bd09-447485c03fe0 external_request extra:{ extensions: { method: 'POST', clientIp: '100.72.106.143' } } url:/parse/classes/AppsWorkspace
+username one undefined
+8/15/2026, 11:37:48 AM [-] pid:30 trace:9af30eb3-ef14-4333-bd09-447485c03fe0 GET /classes/AppsWorkspace 200 15.774 ms - 100.72.106.143
+2026-08-15T03:37:48.885Z info [pid:30] external_response - trace:9af30eb3-ef14-4333-bd09-447485c03fe0 external_response duration:15.774 extra:{ extensions: { method: 'GET', clientIp: '100.72.106.143', statusCode: 200 } } url:/classes/AppsWorkspace
+2026-08-15T03:37:50.568Z info [pid:18] proxima - trace:local-18-1786505079709-l1dtee [undefined] redisLockCycle fail key=email-interval-key, value=0.2080502681459695 time=50000 start=1786765070568
+2026-08-15T03:37:58.362Z info [pid:30] proxima - trace:local-30-1786505085698-adl6ll [undefined] redisLockCycle fail key=email-interval-key, value=0.11547689770484004 time=50000 start=1786765078362

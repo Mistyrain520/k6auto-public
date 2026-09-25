@@ -1,0 +1,1452 @@
+{
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "type": "dashboard"
+        }
+      ]
+    },
+    "description": "A dashboard for visualizing results from the k6.io load testing tool by groups, using the InfluxDB exporter.Based on https://grafana.com/dashboards/10660",
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "gnetId": 13719,
+    "graphTooltip": 2,
+    "id": 8,
+    "links": [],
+    "liveNow": false,
+    "panels": [
+      {
+        "aliasColors": {
+          "max": "#f2c96d",
+          "min": "#f29191",
+          "p90": "#629e51",
+          "p95": "#70dbed"
+        },
+        "bars": false,
+        "dashLength": 10,
+        "dashes": false,
+        "datasource": {
+          "type": "influxdb",
+          "uid": "a065d6ec-efdd-4047-ab57-d7f4dc51e8cc"
+        },
+        "description": "Grouped by 1 sec intervals",
+        "fill": 6,
+        "fillGradient": 0,
+        "gridPos": {
+          "h": 7,
+          "w": 12,
+          "x": 0,
+          "y": 0
+        },
+        "height": "250px",
+        "hiddenSeries": false,
+        "id": 5,
+        "interval": ">1s",
+        "legend": {
+          "alignAsTable": false,
+          "avg": false,
+          "current": false,
+          "hideZero": false,
+          "max": false,
+          "min": false,
+          "show": true,
+          "total": false,
+          "values": false
+        },
+        "lines": true,
+        "linewidth": 1,
+        "links": [],
+        "nullPointMode": "null as zero",
+        "options": {
+          "alertThreshold": true
+        },
+        "percentage": false,
+        "pluginVersion": "10.1.4",
+        "pointradius": 1,
+        "points": false,
+        "renderer": "flot",
+        "seriesOverrides": [],
+        "spaceLength": 10,
+        "stack": false,
+        "steppedLine": false,
+        "targets": [
+          {
+            "alias": "max",
+            "datasource": {
+              "type": "influxdb",
+              "uid": "a065d6ec-efdd-4047-ab57-d7f4dc51e8cc"
+            },
+            "dsType": "influxdb",
+            "groupBy": [
+              {
+                "params": [
+                  "$__interval"
+                ],
+                "type": "time"
+              },
+              {
+                "params": [
+                  "null"
+                ],
+                "type": "fill"
+              }
+            ],
+            "measurement": "/^$Measurement$/",
+            "orderByTime": "ASC",
+            "policy": "default",
+            "refId": "B",
+            "resultFormat": "time_series",
+            "select": [
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                },
+                {
+                  "params": [],
+                  "type": "max"
+                }
+              ]
+            ],
+            "tags": [
+              {
+                "key": "name",
+                "operator": "=~",
+                "value": "/^$URL$/"
+              },
+              {
+                "condition": "AND",
+                "key": "group",
+                "operator": "=~",
+                "value": "/^$Group$/"
+              },
+              {
+                "condition": "AND",
+                "key": "name",
+                "operator": "=~",
+                "value": "/^$Tag$/"
+              }
+            ]
+          },
+          {
+            "alias": "p95",
+            "datasource": {
+              "type": "influxdb",
+              "uid": "a065d6ec-efdd-4047-ab57-d7f4dc51e8cc"
+            },
+            "dsType": "influxdb",
+            "groupBy": [
+              {
+                "params": [
+                  "$__interval"
+                ],
+                "type": "time"
+              },
+              {
+                "params": [
+                  "null"
+                ],
+                "type": "fill"
+              }
+            ],
+            "measurement": "/^$Measurement$/",
+            "orderByTime": "ASC",
+            "policy": "default",
+            "refId": "G",
+            "resultFormat": "time_series",
+            "select": [
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                },
+                {
+                  "params": [
+                    95
+                  ],
+                  "type": "percentile"
+                }
+              ]
+            ],
+            "tags": [
+              {
+                "key": "name",
+                "operator": "=~",
+                "value": "/^$URL$/"
+              },
+              {
+                "condition": "AND",
+                "key": "group",
+                "operator": "=~",
+                "value": "/^$Group$/"
+              },
+              {
+                "condition": "AND",
+                "key": "name",
+                "operator": "=~",
+                "value": "/^$Tag$/"
+              }
+            ]
+          },
+          {
+            "alias": "p90",
+            "datasource": {
+              "type": "influxdb",
+              "uid": "a065d6ec-efdd-4047-ab57-d7f4dc51e8cc"
+            },
+            "dsType": "influxdb",
+            "groupBy": [
+              {
+                "params": [
+                  "$__interval"
+                ],
+                "type": "time"
+              },
+              {
+                "params": [
+                  "null"
+                ],
+                "type": "fill"
+              }
+            ],
+            "measurement": "/^$Measurement$/",
+            "orderByTime": "ASC",
+            "policy": "default",
+            "refId": "F",
+            "resultFormat": "time_series",
+            "select": [
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                },
+                {
+                  "params": [
+                    "90"
+                  ],
+                  "type": "percentile"
+                }
+              ]
+            ],
+            "tags": [
+              {
+                "key": "name",
+                "operator": "=~",
+                "value": "/^$URL$/"
+              },
+              {
+                "condition": "AND",
+                "key": "group",
+                "operator": "=~",
+                "value": "/^$Group$/"
+              },
+              {
+                "condition": "AND",
+                "key": "name",
+                "operator": "=~",
+                "value": "/^$Tag$/"
+              }
+            ]
+          },
+          {
+            "alias": "min",
+            "datasource": {
+              "type": "influxdb",
+              "uid": "a065d6ec-efdd-4047-ab57-d7f4dc51e8cc"
+            },
+            "dsType": "influxdb",
+            "groupBy": [
+              {
+                "params": [
+                  "$__interval"
+                ],
+                "type": "time"
+              },
+              {
+                "params": [
+                  "null"
+                ],
+                "type": "fill"
+              }
+            ],
+            "measurement": "/^$Measurement$/",
+            "orderByTime": "ASC",
+            "policy": "default",
+            "refId": "H",
+            "resultFormat": "time_series",
+            "select": [
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                },
+                {
+                  "params": [],
+                  "type": "min"
+                }
+              ]
+            ],
+            "tags": [
+              {
+                "key": "name",
+                "operator": "=~",
+                "value": "/^$URL$/"
+              },
+              {
+                "condition": "AND",
+                "key": "group",
+                "operator": "=~",
+                "value": "/^$Group$/"
+              },
+              {
+                "condition": "AND",
+                "key": "name",
+                "operator": "=~",
+                "value": "/^$Tag$/"
+              }
+            ]
+          }
+        ],
+        "thresholds": [],
+        "timeRegions": [],
+        "title": "$Measurement (over time)",
+        "tooltip": {
+          "shared": true,
+          "sort": 0,
+          "value_type": "individual"
+        },
+        "type": "graph",
+        "xaxis": {
+          "mode": "time",
+          "show": true,
+          "values": []
+        },
+        "yaxes": [
+          {
+            "$$hashKey": "object:1318",
+            "format": "ms",
+            "logBase": 2,
+            "show": true
+          },
+          {
+            "$$hashKey": "object:1319",
+            "format": "short",
+            "logBase": 1,
+            "show": true
+          }
+        ],
+        "yaxis": {
+          "align": false
+        }
+      },
+      {
+        "datasource": {
+          "type": "influxdb",
+          "uid": "a065d6ec-efdd-4047-ab57-d7f4dc51e8cc"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "custom": {
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "fillOpacity": 80,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "lineWidth": 1,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 12,
+          "x": 12,
+          "y": 0
+        },
+        "id": 8,
+        "interval": ">1s",
+        "links": [],
+        "options": {
+          "barRadius": 0,
+          "barWidth": 0.97,
+          "fullHighlight": false,
+          "groupWidth": 0.7,
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "orientation": "auto",
+          "showValue": "auto",
+          "stacking": "none",
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          },
+          "xTickLabelRotation": 0,
+          "xTickLabelSpacing": 0
+        },
+        "pluginVersion": "10.1.4",
+        "targets": [
+          {
+            "datasource": {
+              "type": "influxdb",
+              "uid": "a065d6ec-efdd-4047-ab57-d7f4dc51e8cc"
+            },
+            "dsType": "influxdb",
+            "groupBy": [
+              {
+                "params": [
+                  "scenario"
+                ],
+                "type": "tag"
+              }
+            ],
+            "hide": false,
+            "measurement": "/^$Measurement$/",
+            "orderByTime": "ASC",
+            "policy": "default",
+            "query": "SELECT sum(\"value\") FROM \"browser_web_vital_cls\" WHERE (\"scenario\"::tag =~ /^$URL$/) AND $timeFilter",
+            "rawQuery": false,
+            "refId": "B",
+            "resultFormat": "time_series",
+            "select": [
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                },
+                {
+                  "params": [],
+                  "type": "sum"
+                }
+              ]
+            ],
+            "tags": [
+              {
+                "key": "scenario",
+                "operator": "=~",
+                "value": "/^$Group$/"
+              }
+            ]
+          }
+        ],
+        "title": "$Measurement (不同场景的总性能时间)",
+        "type": "barchart"
+      },
+      {
+        "columns": [],
+        "datasource": {
+          "type": "influxdb",
+          "uid": "a065d6ec-efdd-4047-ab57-d7f4dc51e8cc"
+        },
+        "fontSize": "100%",
+        "gridPos": {
+          "h": 10,
+          "w": 12,
+          "x": 0,
+          "y": 7
+        },
+        "id": 67,
+        "links": [],
+        "scroll": true,
+        "showHeader": true,
+        "sort": {
+          "desc": false
+        },
+        "styles": [
+          {
+            "$$hashKey": "object:489",
+            "alias": "Time",
+            "align": "auto",
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "pattern": "Time",
+            "type": "hidden"
+          },
+          {
+            "$$hashKey": "object:490",
+            "alias": "P95",
+            "align": "auto",
+            "colorMode": "cell",
+            "colors": [
+              "rgba(50, 172, 45, 0)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(245, 54, 54, 0.9)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 0,
+            "link": false,
+            "pattern": "percentile",
+            "thresholds": [
+              "200",
+              "500"
+            ],
+            "type": "number",
+            "unit": "ms"
+          },
+          {
+            "$$hashKey": "object:491",
+            "alias": "URL",
+            "align": "auto",
+            "colors": [
+              "rgba(245, 54, 54, 0.9)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(50, 172, 45, 0.97)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 2,
+            "link": false,
+            "linkUrl": "",
+            "pattern": "url",
+            "thresholds": [],
+            "type": "number",
+            "unit": "short"
+          },
+          {
+            "$$hashKey": "object:492",
+            "alias": "",
+            "align": "auto",
+            "colorMode": "cell",
+            "colors": [
+              "rgba(50, 172, 45, 0)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(245, 54, 54, 0.9)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 0,
+            "mappingType": 1,
+            "pattern": "min",
+            "thresholds": [
+              "200",
+              "500"
+            ],
+            "type": "number",
+            "unit": "ms"
+          },
+          {
+            "$$hashKey": "object:493",
+            "alias": "",
+            "align": "auto",
+            "colorMode": "cell",
+            "colors": [
+              "rgba(50, 172, 45, 0)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(245, 54, 54, 0.9)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 0,
+            "mappingType": 1,
+            "pattern": "max",
+            "thresholds": [
+              "200",
+              "500"
+            ],
+            "type": "number",
+            "unit": "ms"
+          },
+          {
+            "$$hashKey": "object:494",
+            "alias": "",
+            "align": "auto",
+            "colorMode": "cell",
+            "colors": [
+              "rgba(50, 172, 45, 0)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(245, 54, 54, 0.9)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 0,
+            "mappingType": 1,
+            "pattern": "mean",
+            "thresholds": [
+              "200",
+              "500"
+            ],
+            "type": "number",
+            "unit": "ms"
+          },
+          {
+            "$$hashKey": "object:495",
+            "alias": "",
+            "align": "auto",
+            "colorMode": "cell",
+            "colors": [
+              "rgba(50, 172, 45, 0)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(245, 54, 54, 0.9)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 0,
+            "mappingType": 1,
+            "pattern": "median",
+            "thresholds": [
+              "200",
+              "500"
+            ],
+            "type": "number",
+            "unit": "ms"
+          },
+          {
+            "$$hashKey": "object:496",
+            "alias": "URL",
+            "align": "auto",
+            "colors": [
+              "rgba(245, 54, 54, 0.9)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(50, 172, 45, 0.97)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 2,
+            "mappingType": 1,
+            "pattern": "name",
+            "thresholds": [],
+            "type": "string",
+            "unit": "short"
+          }
+        ],
+        "targets": [
+          {
+            "alias": "min",
+            "datasource": {
+              "type": "influxdb",
+              "uid": "a065d6ec-efdd-4047-ab57-d7f4dc51e8cc"
+            },
+            "dsType": "influxdb",
+            "expr": "",
+            "format": "table",
+            "groupBy": [],
+            "hide": false,
+            "intervalFactor": 2,
+            "measurement": "/^$Measurement$/",
+            "orderByTime": "ASC",
+            "policy": "default",
+            "refId": "A",
+            "resultFormat": "table",
+            "select": [
+              [
+                {
+                  "params": [
+                    "url"
+                  ],
+                  "type": "field"
+                }
+              ],
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                },
+                {
+                  "params": [],
+                  "type": "min"
+                }
+              ],
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                },
+                {
+                  "params": [],
+                  "type": "median"
+                }
+              ],
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                },
+                {
+                  "params": [],
+                  "type": "max"
+                }
+              ],
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                },
+                {
+                  "params": [],
+                  "type": "mean"
+                }
+              ],
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                },
+                {
+                  "params": [
+                    95
+                  ],
+                  "type": "percentile"
+                }
+              ]
+            ],
+            "tags": [
+              {
+                "key": "scenario",
+                "operator": "=~",
+                "value": "/^$Group$/"
+              }
+            ]
+          }
+        ],
+        "title": "URLs and latencies (By Group)",
+        "transform": "table",
+        "type": "table-old"
+      },
+      {
+        "columns": [],
+        "datasource": {
+          "type": "influxdb",
+          "uid": "a065d6ec-efdd-4047-ab57-d7f4dc51e8cc"
+        },
+        "fontSize": "100%",
+        "gridPos": {
+          "h": 10,
+          "w": 12,
+          "x": 12,
+          "y": 7
+        },
+        "id": 73,
+        "links": [],
+        "scroll": true,
+        "showHeader": true,
+        "sort": {
+          "desc": false
+        },
+        "styles": [
+          {
+            "$$hashKey": "object:304",
+            "alias": "Time",
+            "align": "auto",
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "pattern": "Time",
+            "type": "hidden"
+          },
+          {
+            "$$hashKey": "object:305",
+            "alias": "P95",
+            "align": "auto",
+            "colorMode": "cell",
+            "colors": [
+              "rgba(50, 172, 45, 0)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(245, 54, 54, 0.9)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 0,
+            "link": false,
+            "pattern": "percentile",
+            "thresholds": [
+              "200",
+              "500"
+            ],
+            "type": "number",
+            "unit": "ms"
+          },
+          {
+            "$$hashKey": "object:306",
+            "alias": "URL",
+            "align": "auto",
+            "colors": [
+              "rgba(245, 54, 54, 0.9)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(50, 172, 45, 0.97)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 2,
+            "link": false,
+            "linkUrl": "",
+            "pattern": "url",
+            "thresholds": [],
+            "type": "number",
+            "unit": "short"
+          },
+          {
+            "$$hashKey": "object:307",
+            "alias": "",
+            "align": "auto",
+            "colorMode": "cell",
+            "colors": [
+              "rgba(50, 172, 45, 0)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(245, 54, 54, 0.9)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 0,
+            "mappingType": 1,
+            "pattern": "min",
+            "thresholds": [
+              "200",
+              "500"
+            ],
+            "type": "number",
+            "unit": "ms"
+          },
+          {
+            "$$hashKey": "object:308",
+            "alias": "",
+            "align": "auto",
+            "colorMode": "cell",
+            "colors": [
+              "rgba(50, 172, 45, 0)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(245, 54, 54, 0.9)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 0,
+            "mappingType": 1,
+            "pattern": "max",
+            "thresholds": [
+              "200",
+              "500"
+            ],
+            "type": "number",
+            "unit": "ms"
+          },
+          {
+            "$$hashKey": "object:309",
+            "alias": "",
+            "align": "auto",
+            "colorMode": "cell",
+            "colors": [
+              "rgba(50, 172, 45, 0)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(245, 54, 54, 0.9)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 0,
+            "mappingType": 1,
+            "pattern": "mean",
+            "thresholds": [
+              "200",
+              "500"
+            ],
+            "type": "number",
+            "unit": "ms"
+          },
+          {
+            "$$hashKey": "object:310",
+            "alias": "",
+            "align": "auto",
+            "colorMode": "cell",
+            "colors": [
+              "rgba(50, 172, 45, 0)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(245, 54, 54, 0.9)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 0,
+            "mappingType": 1,
+            "pattern": "median",
+            "thresholds": [
+              "200",
+              "500"
+            ],
+            "type": "number",
+            "unit": "ms"
+          },
+          {
+            "$$hashKey": "object:311",
+            "alias": "URL",
+            "align": "auto",
+            "colors": [
+              "rgba(245, 54, 54, 0.9)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(50, 172, 45, 0.97)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 2,
+            "mappingType": 1,
+            "pattern": "name",
+            "thresholds": [],
+            "type": "string",
+            "unit": "short"
+          }
+        ],
+        "targets": [
+          {
+            "alias": "min",
+            "datasource": {
+              "type": "influxdb",
+              "uid": "a065d6ec-efdd-4047-ab57-d7f4dc51e8cc"
+            },
+            "dsType": "influxdb",
+            "expr": "",
+            "format": "table",
+            "groupBy": [
+              {
+                "params": [
+                  "scenario::tag"
+                ],
+                "type": "tag"
+              }
+            ],
+            "hide": false,
+            "intervalFactor": 2,
+            "measurement": "/^$Measurement$/",
+            "orderByTime": "ASC",
+            "policy": "default",
+            "refId": "A",
+            "resultFormat": "table",
+            "select": [
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                },
+                {
+                  "params": [],
+                  "type": "count"
+                }
+              ],
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                },
+                {
+                  "params": [],
+                  "type": "min"
+                }
+              ],
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                },
+                {
+                  "params": [],
+                  "type": "median"
+                }
+              ],
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                },
+                {
+                  "params": [],
+                  "type": "max"
+                }
+              ],
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                },
+                {
+                  "params": [],
+                  "type": "mean"
+                }
+              ],
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                },
+                {
+                  "params": [
+                    95
+                  ],
+                  "type": "percentile"
+                }
+              ]
+            ],
+            "tags": [
+              {
+                "key": "scenario",
+                "operator": "=~",
+                "value": "/^$Group$/"
+              }
+            ]
+          }
+        ],
+        "title": "不同场景下总共多少个请求以及总耗时",
+        "transform": "table",
+        "type": "table-old"
+      },
+      {
+        "columns": [],
+        "datasource": {
+          "type": "influxdb",
+          "uid": "a065d6ec-efdd-4047-ab57-d7f4dc51e8cc"
+        },
+        "fontSize": "100%",
+        "gridPos": {
+          "h": 19,
+          "w": 12,
+          "x": 12,
+          "y": 17
+        },
+        "id": 74,
+        "links": [],
+        "scroll": true,
+        "showHeader": true,
+        "sort": {
+          "desc": false
+        },
+        "styles": [
+          {
+            "$$hashKey": "object:304",
+            "alias": "Time",
+            "align": "auto",
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "pattern": "Time",
+            "type": "hidden"
+          },
+          {
+            "$$hashKey": "object:305",
+            "alias": "P95",
+            "align": "auto",
+            "colorMode": "cell",
+            "colors": [
+              "rgba(50, 172, 45, 0)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(245, 54, 54, 0.9)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 0,
+            "link": false,
+            "pattern": "percentile",
+            "thresholds": [
+              "200",
+              "500"
+            ],
+            "type": "number",
+            "unit": "ms"
+          },
+          {
+            "$$hashKey": "object:306",
+            "alias": "URL",
+            "align": "auto",
+            "colors": [
+              "rgba(245, 54, 54, 0.9)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(50, 172, 45, 0.97)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 2,
+            "link": false,
+            "linkUrl": "",
+            "pattern": "url",
+            "thresholds": [],
+            "type": "number",
+            "unit": "short"
+          },
+          {
+            "$$hashKey": "object:307",
+            "alias": "",
+            "align": "auto",
+            "colorMode": "cell",
+            "colors": [
+              "rgba(50, 172, 45, 0)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(245, 54, 54, 0.9)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 0,
+            "mappingType": 1,
+            "pattern": "min",
+            "thresholds": [
+              "200",
+              "500"
+            ],
+            "type": "number",
+            "unit": "ms"
+          },
+          {
+            "$$hashKey": "object:308",
+            "alias": "",
+            "align": "auto",
+            "colorMode": "cell",
+            "colors": [
+              "rgba(50, 172, 45, 0)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(245, 54, 54, 0.9)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 0,
+            "mappingType": 1,
+            "pattern": "max",
+            "thresholds": [
+              "200",
+              "500"
+            ],
+            "type": "number",
+            "unit": "ms"
+          },
+          {
+            "$$hashKey": "object:309",
+            "alias": "",
+            "align": "auto",
+            "colorMode": "cell",
+            "colors": [
+              "rgba(50, 172, 45, 0)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(245, 54, 54, 0.9)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 0,
+            "mappingType": 1,
+            "pattern": "mean",
+            "thresholds": [
+              "200",
+              "500"
+            ],
+            "type": "number",
+            "unit": "ms"
+          },
+          {
+            "$$hashKey": "object:310",
+            "alias": "",
+            "align": "auto",
+            "colorMode": "cell",
+            "colors": [
+              "rgba(50, 172, 45, 0)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(245, 54, 54, 0.9)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 0,
+            "mappingType": 1,
+            "pattern": "median",
+            "thresholds": [
+              "200",
+              "500"
+            ],
+            "type": "number",
+            "unit": "ms"
+          },
+          {
+            "$$hashKey": "object:311",
+            "alias": "URL",
+            "align": "auto",
+            "colors": [
+              "rgba(245, 54, 54, 0.9)",
+              "rgba(237, 129, 40, 0.89)",
+              "rgba(50, 172, 45, 0.97)"
+            ],
+            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "decimals": 2,
+            "mappingType": 1,
+            "pattern": "name",
+            "thresholds": [],
+            "type": "string",
+            "unit": "short"
+          }
+        ],
+        "targets": [
+          {
+            "alias": "min",
+            "datasource": {
+              "type": "influxdb",
+              "uid": "a065d6ec-efdd-4047-ab57-d7f4dc51e8cc"
+            },
+            "dsType": "influxdb",
+            "expr": "",
+            "format": "table",
+            "groupBy": [],
+            "hide": false,
+            "intervalFactor": 2,
+            "measurement": "/^$Measurement$/",
+            "orderByTime": "ASC",
+            "policy": "default",
+            "refId": "A",
+            "resultFormat": "table",
+            "select": [
+              [
+                {
+                  "params": [
+                    "url"
+                  ],
+                  "type": "field"
+                }
+              ],
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                }
+              ],
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                }
+              ]
+            ],
+            "tags": [
+              {
+                "key": "scenario",
+                "operator": "=~",
+                "value": "/^$Group$/"
+              }
+            ]
+          }
+        ],
+        "title": "不同场景下总共多少个请求以及总耗时",
+        "transform": "table",
+        "type": "table-old"
+      }
+    ],
+    "refresh": "",
+    "schemaVersion": 38,
+    "style": "dark",
+    "tags": [
+      "web"
+    ],
+    "templating": {
+      "list": [
+        {
+          "current": {
+            "selected": true,
+            "text": [
+              "cls"
+            ],
+            "value": [
+              "browser_web_vital_cls"
+            ]
+          },
+          "hide": 0,
+          "includeAll": true,
+          "multi": true,
+          "name": "Measurement",
+          "options": [
+            {
+              "selected": false,
+              "text": "All",
+              "value": "$__all"
+            },
+            {
+              "selected": true,
+              "text": "cls",
+              "value": "browser_web_vital_cls"
+            },
+            {
+              "selected": false,
+              "text": "fcp",
+              "value": "browser_web_vital_fcp"
+            },
+            {
+              "selected": false,
+              "text": "lcp",
+              "value": "browser_web_vital_lcp"
+            },
+            {
+              "selected": false,
+              "text": "ttfb",
+              "value": "browser_web_vital_ttfb"
+            }
+          ],
+          "query": "browser_http_req_duration",
+          "queryValue": "",
+          "skipUrlSync": false,
+          "type": "custom"
+        },
+        {
+          "allValue": "*",
+          "current": {
+            "selected": true,
+            "text": [
+              "All"
+            ],
+            "value": [
+              "$__all"
+            ]
+          },
+          "datasource": {
+            "type": "influxdb",
+            "uid": "a065d6ec-efdd-4047-ab57-d7f4dc51e8cc"
+          },
+          "definition": "SHOW TAG VALUES FROM /^$Measurement$/ WITH KEY = \"url\"",
+          "hide": 0,
+          "includeAll": true,
+          "label": "URL",
+          "multi": true,
+          "name": "URL",
+          "options": [],
+          "query": "SHOW TAG VALUES FROM /^$Measurement$/ WITH KEY = \"url\"",
+          "refresh": 2,
+          "regex": "",
+          "skipUrlSync": false,
+          "sort": 1,
+          "tagValuesQuery": "",
+          "tagsQuery": "",
+          "type": "query",
+          "useTags": false
+        },
+        {
+          "current": {
+            "selected": true,
+            "text": [
+              "myui",
+              "ui"
+            ],
+            "value": [
+              "myui",
+              "ui"
+            ]
+          },
+          "datasource": {
+            "type": "influxdb",
+            "uid": "a065d6ec-efdd-4047-ab57-d7f4dc51e8cc"
+          },
+          "definition": "SHOW TAG VALUES FROM /^$Measurement$/ WITH KEY = \"scenario\" WHERE $timeFilter",
+          "hide": 0,
+          "includeAll": true,
+          "label": "Group",
+          "multi": true,
+          "name": "Group",
+          "options": [],
+          "query": "SHOW TAG VALUES FROM /^$Measurement$/ WITH KEY = \"scenario\" WHERE $timeFilter",
+          "refresh": 2,
+          "regex": "",
+          "skipUrlSync": false,
+          "sort": 5,
+          "tagValuesQuery": "",
+          "tagsQuery": "",
+          "type": "query",
+          "useTags": false
+        },
+        {
+          "current": {
+            "selected": true,
+            "text": [
+              "All"
+            ],
+            "value": [
+              "$__all"
+            ]
+          },
+          "datasource": {
+            "type": "influxdb",
+            "uid": "a065d6ec-efdd-4047-ab57-d7f4dc51e8cc"
+          },
+          "definition": "SHOW TAG VALUES FROM /^$Measurement$/ WITH KEY = \"scenario\" WHERE $timeFilter",
+          "hide": 0,
+          "includeAll": true,
+          "label": "Tag",
+          "multi": true,
+          "name": "Tag",
+          "options": [],
+          "query": "SHOW TAG VALUES FROM /^$Measurement$/ WITH KEY = \"scenario\" WHERE $timeFilter",
+          "refresh": 2,
+          "regex": "",
+          "skipUrlSync": false,
+          "sort": 5,
+          "tagValuesQuery": "",
+          "tagsQuery": "",
+          "type": "query",
+          "useTags": false
+        }
+      ]
+    },
+    "time": {
+      "from": "now-30d",
+      "to": "now"
+    },
+    "timepicker": {
+      "refresh_intervals": [
+        "5s",
+        "10s",
+        "30s",
+        "5m",
+        "30m"
+      ],
+      "time_options": [
+        "5m",
+        "15m",
+        "1h",
+        "6h",
+        "12h",
+        "24h",
+        "2d",
+        "7d",
+        "30d"
+      ]
+    },
+    "timezone": "browser",
+    "title": "mytest Copy",
+    "uid": "f09bcee6-1ebf-41f4-a06d-b380de4e630a",
+    "version": 2,
+    "weekStart": ""
+  }

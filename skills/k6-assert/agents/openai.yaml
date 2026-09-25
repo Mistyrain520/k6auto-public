@@ -1,0 +1,4 @@
+interface:
+  display_name: "k6-assert"
+  short_description: "结合最新 allure/zaplogger 日志审计 apiTest 接口断言，给出增加或修改断言意见"
+  default_prompt: "Use $k6-assert to 结合最新 allure 日志审计仓库 apiTest 接口断言，总结所有接口的断言情况并给出增加或修改断言建议"

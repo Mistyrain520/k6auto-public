@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k6-workers
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: k6-worker
+  template:
+    metadata:
+      labels:
+        app: k6-worker
+    spec:
+      containers:
+      - name: k6-worker-container
+        image: crpi-mstj0ugnrdkhzm1r.cn-guangzhou.personal.cr.aliyuncs.com/chensuixaing/k6:20251206
+        command: ["./k6", "run", "dummy.js"]
+        imagePullPolicy: Always
+        env:
+        - name: K6_WORKER
+          value: "true"
+        ports:
+        - containerPort: 6565
+          name: k6-dist-port

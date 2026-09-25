@@ -1,0 +1,728 @@
+[
+  {
+    "type": "receive",
+    "time": 1704106514.5604298,
+    "opcode": 1,
+    "data": "0{\"sid\":\"7mBERNt02FKkVsfxAAL_\",\"upgrades\":[],\"pingInterval\":5000,\"pingTimeout\":50000}"
+  },
+  {
+    "type": "receive",
+    "time": 1704106514.5610788,
+    "opcode": 1,
+    "data": "40"
+  },
+  {
+    "type": "receive",
+    "time": 1704106514.561838,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"license\\\",\\\"license\\\":{\\\"ofdList\\\":[{\\\"authorizationCode\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\",\\\"ip\\\":\\\"\\\",\\\"ofdCode\\\":\\\"\\\"}],\\\"ofdIsChecked\\\":false,\\\"uuid\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\",\\\"OFDLicense\\\":null,\\\"ip\\\":null,\\\"isClusterMode\\\":true,\\\"uosAI\\\":false,\\\"bindMode\\\":1,\\\"exchangeFormat\\\":[\\\"bmp\\\",\\\"docx\\\",\\\"gif\\\",\\\"jpg\\\",\\\"odt\\\",\\\"pdf\\\",\\\"rtf\\\",\\\"png\\\",\\\"txt\\\",\\\"csv\\\",\\\"ods\\\",\\\"xlsx\\\",\\\"odp\\\",\\\"pptx\\\"],\\\"wordDeskRadio\\\":\\\"1\\\",\\\"wordDeskFileFormatList\\\":[\\\"doc\\\",\\\"docm\\\",\\\"docx\\\",\\\"dot\\\",\\\"dotm\\\",\\\"dotx\\\",\\\"epub\\\",\\\"fodt\\\",\\\"htm\\\",\\\"html\\\",\\\"mht\\\",\\\"odt\\\",\\\"ott\\\",\\\"pdf\\\",\\\"rtf\\\",\\\"txt\\\",\\\"xps\\\",\\\"wps\\\"],\\\"wordDeskAdvancedFunction\\\":[],\\\"wordMobileFileFormatList\\\":[\\\"doc\\\",\\\"docm\\\",\\\"docx\\\",\\\"dot\\\",\\\"dotm\\\",\\\"dotx\\\",\\\"epub\\\",\\\"fodt\\\",\\\"htm\\\",\\\"html\\\",\\\"mht\\\",\\\"odt\\\",\\\"ott\\\",\\\"pdf\\\",\\\"rtf\\\",\\\"txt\\\",\\\"xps\\\",\\\"wps\\\"],\\\"wordMobileRadio\\\":\\\"1\\\",\\\"excelDeskRadio\\\":\\\"1\\\",\\\"excelDeskFileFormatList\\\":[\\\"csv\\\",\\\"et\\\",\\\"crtx\\\",\\\"fods\\\",\\\"ods\\\",\\\"ost\\\",\\\"xls\\\",\\\"xlsm\\\",\\\"xlsx\\\",\\\"xlt\\\",\\\"xltm\\\",\\\"xltx\\\"],\\\"excelDeskAdvancedFunction\\\":[],\\\"pptDeskAdvancedFunction\\\":[],\\\"excelMobileRadio\\\":\\\"1\\\",\\\"excelMobileFileFormatList\\\":[\\\"csv\\\",\\\"et\\\",\\\"crtx\\\",\\\"fods\\\",\\\"ods\\\",\\\"ost\\\",\\\"xls\\\",\\\"xlsm\\\",\\\"xlsx\\\",\\\"xlt\\\",\\\"xltm\\\",\\\"xltx\\\"],\\\"pptDeskRadio\\\":\\\"1\\\",\\\"pptDeskFileFormatList\\\":[\\\"fodp\\\",\\\"dps\\\",\\\"odp\\\",\\\"otp\\\",\\\"pot\\\",\\\"potm\\\",\\\"potx\\\",\\\"pps\\\",\\\"ppsm\\\",\\\"ppsx\\\",\\\"ppt\\\",\\\"pptm\\\",\\\"pptx\\\"],\\\"pptMobileRadio\\\":\\\"1\\\",\\\"pptMobileFileFormatList\\\":[\\\"fodp\\\",\\\"dps\\\",\\\"odp\\\",\\\"otp\\\",\\\"pot\\\",\\\"potm\\\",\\\"potx\\\",\\\"pps\\\",\\\"ppsm\\\",\\\"ppsx\\\",\\\"ppt\\\",\\\"pptm\\\",\\\"pptx\\\"],\\\"process\\\":8,\\\"connections\\\":100,\\\"users_count\\\":0,\\\"nodes\\\":0,\\\"count\\\":8,\\\"commonAdvanceFunction\\\":[],\\\"end_date\\\":\\\"2024-03-26\\\",\\\"users_expire\\\":2,\\\"mode\\\":0,\\\"light\\\":false,\\\"version\\\":\\\"6.0.0\\\",\\\"coCharaCode\\\":\\\"\\\",\\\"coRegUserMax\\\":\\\"\\\",\\\"authorizationLevel\\\":800,\\\"cosysCode\\\":\\\"\\\",\\\"useOfficeExpand\\\":false,\\\"hideOfficeLog\\\":false,\\\"hideCooperationLog\\\":false,\\\"enableRedknowledge\\\":false,\\\"enableOfdFormat\\\":false,\\\"replaceCooperationLog\\\":false,\\\"endDataMsg\\\":null,\\\"isCheckedPublicCloud\\\":false,\\\"sequenceNo\\\":\\\"64e23ab15ca7f66da76798ad4908b5fd\\\",\\\"endDate\\\":\\\"2024-03-26T00:00:00.000Z\\\",\\\"type\\\":3,\\\"usersExpire\\\":172800,\\\"isMaster\\\":true,\\\"buildDate\\\":\\\"2023-10-31T16:00:00.000Z\\\",\\\"rights\\\":1,\\\"buildVersion\\\":\\\"6.4.81\\\",\\\"buildNumber\\\":0}}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106514.737881,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"auth\\\",\\\"docid\\\":\\\"zuhutest_6_101720\\\",\\\"documentCallbackUrl\\\":\\\"http://<YOUR-DOMAIN>:5199/open/office/101720/saveCXCallback?tenant=zuhutest_6&userId=103&type=&id=101720\\\",\\\"token\\\":\\\"fghhfgsjdgfjs\\\",\\\"user\\\":{\\\"id\\\":\\\"103\\\",\\\"username\\\":\\\"osc-admin\\\",\\\"firstname\\\":null,\\\"lastname\\\":null,\\\"indexUser\\\":-1},\\\"editorType\\\":1,\\\"lastOtherSaveTime\\\":-1,\\\"block\\\":[],\\\"sessionId\\\":null,\\\"sessionTimeConnect\\\":null,\\\"sessionTimeIdle\\\":0,\\\"documentFormatSave\\\":257,\\\"view\\\":false,\\\"isCloseCoAuthoring\\\":false,\\\"openCmd\\\":{\\\"c\\\":\\\"open\\\",\\\"id\\\":\\\"zuhutest_6_101720\\\",\\\"userid\\\":\\\"103\\\",\\\"format\\\":\\\"xlsx\\\",\\\"url\\\":\\\"http://<YOUR-DOMAIN>:9000/gitee-wiki/zuhutest_6/page/1034/101720/f24f0a9663ab4564a15cf7beda648efb.xlsx\\\",\\\"title\\\":\\\"Unnamed.xlsx\\\",\\\"lcid\\\":30724,\\\"nobase64\\\":true},\\\"lang\\\":\\\"zh\\\",\\\"mode\\\":null,\\\"permissions\\\":{\\\"indicators\\\":[],\\\"canSetIndicator\\\":false}}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106514.795101,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"auth\\\",\\\"result\\\":1,\\\"sessionId\\\":\\\"7mBERNt02FKkVsfxAAL_\\\",\\\"sessionTimeConnect\\\":1704106515457,\\\"participants\\\":[{\\\"id\\\":\\\"1031\\\",\\\"idOriginal\\\":\\\"103\\\",\\\"username\\\":\\\"osc-admin\\\",\\\"indexUser\\\":1,\\\"view\\\":false,\\\"connectionId\\\":\\\"7mBERNt02FKkVsfxAAL_\\\",\\\"isCloseCoAuthoring\\\":false,\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\",\\\"editorType\\\":1}],\\\"locks\\\":[],\\\"indexUser\\\":1,\\\"g_cAscSpellCheckUrl\\\":\\\"\\\",\\\"buildVersion\\\":\\\"6.4.81\\\",\\\"buildNumber\\\":0,\\\"licenseType\\\":3,\\\"settings\\\":{\\\"spellcheckerUrl\\\":\\\"\\\",\\\"reconnection\\\":{\\\"attempts\\\":10,\\\"delay\\\":2000},\\\"websocketMaxPayloadSize\\\":1572864}}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106515.2089648,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"documentOpen\\\",\\\"data\\\":{\\\"type\\\":\\\"open\\\",\\\"status\\\":\\\"ok\\\",\\\"data\\\":{\\\"Editor.bin\\\":\\\"http://<YOUR-DOMAIN>/cache/files/zuhutest_6_101720/Editor.bin/Editor.bin?md5=9UNThYosBbAXqOUAcR5Xrw&expires=1706698516&disposition=attachment&filename=Editor.bin\\\"}}}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106515.9799678,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"unLockDocument\\\",\\\"isSave\\\":false,\\\"unlock\\\":false,\\\"deleteIndex\\\":null,\\\"releaseLocks\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106519.5767019,
+    "opcode": 1,
+    "data": "2"
+  },
+  {
+    "type": "receive",
+    "time": 1704106519.61896,
+    "opcode": 1,
+    "data": "3"
+  },
+  {
+    "type": "send",
+    "time": 1704106520.741277,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"getLock\\\",\\\"block\\\":[{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"b43352b3-00f1-6a8e-942b-93d10abeaf14\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":0,\\\"r1\\\":0,\\\"c2\\\":0,\\\"r2\\\":0}}]}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106520.7854128,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"getLock\\\",\\\"locks\\\":[{\\\"time\\\":1704106521683,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"b43352b3-00f1-6a8e-942b-93d10abeaf14\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":0,\\\"r1\\\":0,\\\"c2\\\":0,\\\"r2\\\":0}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"}]}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106521.427562,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"isSaveLock\\\"}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106521.4711318,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveLock\\\",\\\"saveLock\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106521.473928,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveChanges\\\",\\\"changes\\\":\\\"[\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAAAAAAAAAAAAAAAAAAA9AAAAAAIAAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\"]\\\",\\\"startSaveChanges\\\":true,\\\"endSaveChanges\\\":true,\\\"isCoAuthoring\\\":false,\\\"isExcel\\\":true,\\\"deleteIndex\\\":null,\\\"excelAdditionalInfo\\\":null,\\\"unlock\\\":false,\\\"releaseLocks\\\":false}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106521.525653,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"unSaveLock\\\",\\\"index\\\":0,\\\"time\\\":1704106522000}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106524.6192749,
+    "opcode": 1,
+    "data": "2"
+  },
+  {
+    "type": "receive",
+    "time": 1704106524.663106,
+    "opcode": 1,
+    "data": "3"
+  },
+  {
+    "type": "send",
+    "time": 1704106525.044087,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"getLock\\\",\\\"block\\\":[{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"0ebeda5d-e2b7-ce0c-2b6a-d7c7668c149b\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":0,\\\"r1\\\":1,\\\"c2\\\":0,\\\"r2\\\":31}}]}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106525.087647,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"getLock\\\",\\\"locks\\\":[{\\\"time\\\":1704106521683,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"b43352b3-00f1-6a8e-942b-93d10abeaf14\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":0,\\\"r1\\\":0,\\\"c2\\\":0,\\\"r2\\\":0}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106525985,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"0ebeda5d-e2b7-ce0c-2b6a-d7c7668c149b\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":0,\\\"r1\\\":1,\\\"c2\\\":0,\\\"r2\\\":31}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"}]}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106525.1395319,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"isSaveLock\\\"}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106525.182184,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveLock\\\",\\\"saveLock\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106525.183964,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveChanges\\\",\\\"changes\\\":\\\"[\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAAEAAAAAAAAAAQAAAAA9AAAAAAIBAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAAIAAAAAAAAAAgAAAAA9AAAAAAICAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAAMAAAAAAAAAAwAAAAA9AAAAAAIDAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAAQAAAAAAAAABAAAAAA9AAAAAAIEAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAAUAAAAAAAAABQAAAAA9AAAAAAIFAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAAYAAAAAAAAABgAAAAA9AAAAAAIGAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAAcAAAAAAAAABwAAAAA9AAAAAAIHAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAAgAAAAAAAAACAAAAAA9AAAAAAIIAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAAkAAAAAAAAACQAAAAA9AAAAAAIJAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAAoAAAAAAAAACgAAAAA9AAAAAAIKAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAAsAAAAAAAAACwAAAAA9AAAAAAILAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAAwAAAAAAAAADAAAAAA9AAAAAAIMAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAA0AAAAAAAAADQAAAAA9AAAAAAINAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAA4AAAAAAAAADgAAAAA9AAAAAAIOAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAA8AAAAAAAAADwAAAAA9AAAAAAIPAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAABAAAAAAAAAAEAAAAAA9AAAAAAIQAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAABEAAAAAAAAAEQAAAAA9AAAAAAIRAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAABIAAAAAAAAAEgAAAAA9AAAAAAISAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAABMAAAAAAAAAEwAAAAA9AAAAAAITAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAABQAAAAAAAAAFAAAAAA9AAAAAAIUAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAABUAAAAAAAAAFQAAAAA9AAAAAAIVAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAABYAAAAAAAAAFgAAAAA9AAAAAAIWAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAABcAAAAAAAAAFwAAAAA9AAAAAAIXAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAABgAAAAAAAAAGAAAAAA9AAAAAAIYAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAABkAAAAAAAAAGQAAAAA9AAAAAAIZAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAABoAAAAAAAAAGgAAAAA9AAAAAAIaAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAABsAAAAAAAAAGwAAAAA9AAAAAAIbAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAABwAAAAAAAAAHAAAAAA9AAAAAAIcAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAB0AAAAAAAAAHQAAAAA9AAAAAAIdAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAB4AAAAAAAAAHgAAAAA9AAAAAAIeAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAAAAAB8AAAAAAAAAHwAAAAA9AAAAAAIfAQIAAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\"]\\\",\\\"startSaveChanges\\\":true,\\\"endSaveChanges\\\":true,\\\"isCoAuthoring\\\":false,\\\"isExcel\\\":true,\\\"deleteIndex\\\":1,\\\"excelAdditionalInfo\\\":null,\\\"unlock\\\":false,\\\"releaseLocks\\\":false}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106525.236526,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"unSaveLock\\\",\\\"index\\\":-1,\\\"time\\\":1704106526000}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106528.2105398,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"getLock\\\",\\\"block\\\":[{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"8f1a7f03-36df-3e62-466e-87abac2e3f87\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":0,\\\"c2\\\":1,\\\"r2\\\":0}}]}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106528.254624,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"getLock\\\",\\\"locks\\\":[{\\\"time\\\":1704106521683,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"b43352b3-00f1-6a8e-942b-93d10abeaf14\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":0,\\\"r1\\\":0,\\\"c2\\\":0,\\\"r2\\\":0}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106525985,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"0ebeda5d-e2b7-ce0c-2b6a-d7c7668c149b\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":0,\\\"r1\\\":1,\\\"c2\\\":0,\\\"r2\\\":31}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106529151,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"8f1a7f03-36df-3e62-466e-87abac2e3f87\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":0,\\\"c2\\\":1,\\\"r2\\\":0}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"}]}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106528.8922389,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"isSaveLock\\\"}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106528.9379148,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveLock\\\",\\\"saveLock\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106528.93979,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveChanges\\\",\\\"changes\\\":\\\"[\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAAAAAAABAAAAAAAAAAA9AAAAAAIAAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAgEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\"]\\\",\\\"startSaveChanges\\\":true,\\\"endSaveChanges\\\":true,\\\"isCoAuthoring\\\":false,\\\"isExcel\\\":true,\\\"deleteIndex\\\":32,\\\"excelAdditionalInfo\\\":null,\\\"unlock\\\":false,\\\"releaseLocks\\\":false}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106528.9897408,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"unSaveLock\\\",\\\"index\\\":-1,\\\"time\\\":1704106529000}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106529.0264928,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"getLock\\\",\\\"block\\\":[{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"ee5b63a3-e0ba-54e0-0571-8f66dcc5c6c1\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":1,\\\"c2\\\":1,\\\"r2\\\":1}}]}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106529.0697608,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"getLock\\\",\\\"locks\\\":[{\\\"time\\\":1704106521683,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"b43352b3-00f1-6a8e-942b-93d10abeaf14\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":0,\\\"r1\\\":0,\\\"c2\\\":0,\\\"r2\\\":0}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106525985,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"0ebeda5d-e2b7-ce0c-2b6a-d7c7668c149b\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":0,\\\"r1\\\":1,\\\"c2\\\":0,\\\"r2\\\":31}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106529151,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"8f1a7f03-36df-3e62-466e-87abac2e3f87\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":0,\\\"c2\\\":1,\\\"r2\\\":0}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106529967,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"ee5b63a3-e0ba-54e0-0571-8f66dcc5c6c1\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":1,\\\"c2\\\":1,\\\"r2\\\":1}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"}]}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106529.6666338,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"isSaveLock\\\"}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106529.671691,
+    "opcode": 1,
+    "data": "2"
+  },
+  {
+    "type": "receive",
+    "time": 1704106529.709056,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveLock\\\",\\\"saveLock\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106529.7099228,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveChanges\\\",\\\"changes\\\":\\\"[\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAAEAAAABAAAAAQAAAAA9AAAAAAIBAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAgIDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\"]\\\",\\\"startSaveChanges\\\":true,\\\"endSaveChanges\\\":true,\\\"isCoAuthoring\\\":false,\\\"isExcel\\\":true,\\\"deleteIndex\\\":33,\\\"excelAdditionalInfo\\\":null,\\\"unlock\\\":false,\\\"releaseLocks\\\":false}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106529.713507,
+    "opcode": 1,
+    "data": "3"
+  },
+  {
+    "type": "receive",
+    "time": 1704106529.761484,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"unSaveLock\\\",\\\"index\\\":-1,\\\"time\\\":1704106530000}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106529.765292,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"getLock\\\",\\\"block\\\":[{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"d4fe2d5e-50a3-708d-4b32-632b691e4876\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":2,\\\"c2\\\":1,\\\"r2\\\":2}}]}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106529.80839,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"getLock\\\",\\\"locks\\\":[{\\\"time\\\":1704106521683,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"b43352b3-00f1-6a8e-942b-93d10abeaf14\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":0,\\\"r1\\\":0,\\\"c2\\\":0,\\\"r2\\\":0}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106525985,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"0ebeda5d-e2b7-ce0c-2b6a-d7c7668c149b\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":0,\\\"r1\\\":1,\\\"c2\\\":0,\\\"r2\\\":31}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106529151,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"8f1a7f03-36df-3e62-466e-87abac2e3f87\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":0,\\\"c2\\\":1,\\\"r2\\\":0}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106529967,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"ee5b63a3-e0ba-54e0-0571-8f66dcc5c6c1\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":1,\\\"c2\\\":1,\\\"r2\\\":1}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106530706,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"d4fe2d5e-50a3-708d-4b32-632b691e4876\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":2,\\\"c2\\\":1,\\\"r2\\\":2}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"}]}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106530.8654919,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"isSaveLock\\\"}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106530.910744,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveLock\\\",\\\"saveLock\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106530.91151,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveChanges\\\",\\\"changes\\\":\\\"[\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAAIAAAABAAAAAgAAAAA9AAAAAAICAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAgMDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\"]\\\",\\\"startSaveChanges\\\":true,\\\"endSaveChanges\\\":true,\\\"isCoAuthoring\\\":false,\\\"isExcel\\\":true,\\\"deleteIndex\\\":34,\\\"excelAdditionalInfo\\\":null,\\\"unlock\\\":false,\\\"releaseLocks\\\":false}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106530.958094,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"unSaveLock\\\",\\\"index\\\":-1,\\\"time\\\":1704106531000}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106533.358851,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"getLock\\\",\\\"block\\\":[{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"876e34f2-b720-3d7b-0aff-a85f08e678af\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":3,\\\"c2\\\":1,\\\"r2\\\":31}}]}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106533.4035108,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"getLock\\\",\\\"locks\\\":[{\\\"time\\\":1704106521683,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"b43352b3-00f1-6a8e-942b-93d10abeaf14\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":0,\\\"r1\\\":0,\\\"c2\\\":0,\\\"r2\\\":0}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106525985,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"0ebeda5d-e2b7-ce0c-2b6a-d7c7668c149b\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":0,\\\"r1\\\":1,\\\"c2\\\":0,\\\"r2\\\":31}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106529151,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"8f1a7f03-36df-3e62-466e-87abac2e3f87\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":0,\\\"c2\\\":1,\\\"r2\\\":0}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106529967,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"ee5b63a3-e0ba-54e0-0571-8f66dcc5c6c1\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":1,\\\"c2\\\":1,\\\"r2\\\":1}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106530706,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"d4fe2d5e-50a3-708d-4b32-632b691e4876\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":2,\\\"c2\\\":1,\\\"r2\\\":2}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106534299,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"876e34f2-b720-3d7b-0aff-a85f08e678af\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":3,\\\"c2\\\":1,\\\"r2\\\":31}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"}]}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106533.457958,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"isSaveLock\\\"}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106533.501042,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveLock\\\",\\\"saveLock\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106533.50277,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveChanges\\\",\\\"changes\\\":\\\"[\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAAMAAAABAAAAAwAAAAA9AAAAAAIDAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAgQDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAAQAAAABAAAABAAAAAA9AAAAAAIEAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAgUDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAAUAAAABAAAABQAAAAA9AAAAAAIFAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAgYDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAAYAAAABAAAABgAAAAA9AAAAAAIGAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAgcDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAAcAAAABAAAABwAAAAA9AAAAAAIHAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAggDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAAgAAAABAAAACAAAAAA9AAAAAAIIAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAgkDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAAkAAAABAAAACQAAAAA9AAAAAAIJAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAgoDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAAoAAAABAAAACgAAAAA9AAAAAAIKAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAgsDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAAsAAAABAAAACwAAAAA9AAAAAAILAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAgwDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAAwAAAABAAAADAAAAAA9AAAAAAIMAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAg0DAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAA0AAAABAAAADQAAAAA9AAAAAAINAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAg4DAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAA4AAAABAAAADgAAAAA9AAAAAAIOAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAg8DAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAA8AAAABAAAADwAAAAA9AAAAAAIPAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAhADAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAABAAAAABAAAAEAAAAAA9AAAAAAIQAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAhEDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAABEAAAABAAAAEQAAAAA9AAAAAAIRAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAhIDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAABIAAAABAAAAEgAAAAA9AAAAAAISAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAhMDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAABMAAAABAAAAEwAAAAA9AAAAAAITAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAhQDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAABQAAAABAAAAFAAAAAA9AAAAAAIUAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAhUDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAABUAAAABAAAAFQAAAAA9AAAAAAIVAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAhYDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAABYAAAABAAAAFgAAAAA9AAAAAAIWAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAhcDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAABcAAAABAAAAFwAAAAA9AAAAAAIXAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAhgDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAABgAAAABAAAAGAAAAAA9AAAAAAIYAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAhkDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAABkAAAABAAAAGQAAAAA9AAAAAAIZAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAhoDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAABoAAAABAAAAGgAAAAA9AAAAAAIaAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAhsDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAABsAAAABAAAAGwAAAAA9AAAAAAIbAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAhwDAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAABwAAAABAAAAHAAAAAA9AAAAAAIcAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAh0DAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAB0AAAABAAAAHQAAAAA9AAAAAAIdAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAh4DAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAB4AAAABAAAAHgAAAAA9AAAAAAIeAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAh8DAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\",\\\\\\\"97;XQAAAAEAEAECAAAANgABAQAAAB8AAAABAAAAHwAAAAA9AAAAAAIfAQIBAgkDFQAAAAAAAQkBCgAAAAAAAQACAiADAgACAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\"]\\\",\\\"startSaveChanges\\\":true,\\\"endSaveChanges\\\":true,\\\"isCoAuthoring\\\":false,\\\"isExcel\\\":true,\\\"deleteIndex\\\":35,\\\"excelAdditionalInfo\\\":null,\\\"unlock\\\":false,\\\"releaseLocks\\\":false}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106533.555866,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"unSaveLock\\\",\\\"index\\\":-1,\\\"time\\\":1704106534000}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106534.7145529,
+    "opcode": 1,
+    "data": "2"
+  },
+  {
+    "type": "receive",
+    "time": 1704106534.7562718,
+    "opcode": 1,
+    "data": "3"
+  },
+  {
+    "type": "send",
+    "time": 1704106538.491006,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"getLock\\\",\\\"block\\\":[{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":3,\\\"subType\\\":null,\\\"guid\\\":\\\"c238b3b7-e7d5-1a5f-2c1d-368d04fbd6cf\\\",\\\"rangeOrObjectId\\\":\\\"6\\\"}]}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106538.535038,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"getLock\\\",\\\"locks\\\":[{\\\"time\\\":1704106521683,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"b43352b3-00f1-6a8e-942b-93d10abeaf14\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":0,\\\"r1\\\":0,\\\"c2\\\":0,\\\"r2\\\":0}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106525985,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"0ebeda5d-e2b7-ce0c-2b6a-d7c7668c149b\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":0,\\\"r1\\\":1,\\\"c2\\\":0,\\\"r2\\\":31}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106529151,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"8f1a7f03-36df-3e62-466e-87abac2e3f87\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":0,\\\"c2\\\":1,\\\"r2\\\":0}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106529967,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"ee5b63a3-e0ba-54e0-0571-8f66dcc5c6c1\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":1,\\\"c2\\\":1,\\\"r2\\\":1}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106530706,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"d4fe2d5e-50a3-708d-4b32-632b691e4876\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":2,\\\"c2\\\":1,\\\"r2\\\":2}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106534299,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"876e34f2-b720-3d7b-0aff-a85f08e678af\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":3,\\\"c2\\\":1,\\\"r2\\\":31}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106539432,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":3,\\\"subType\\\":null,\\\"guid\\\":\\\"c238b3b7-e7d5-1a5f-2c1d-368d04fbd6cf\\\",\\\"rangeOrObjectId\\\":\\\"6\\\"},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"}]}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106538.57582,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"isSaveLock\\\"}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106538.620494,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveLock\\\",\\\"saveLock\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106538.621444,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveChanges\\\",\\\"changes\\\":\\\"[\\\\\\\"54;MgAAAAEBEgECAAAANgAABSIAAAAACAwAAABTAGgAZQBlAHQAMQABCAYAAAA0bDV1OY0CAQMB\\\\\\\"]\\\",\\\"startSaveChanges\\\":true,\\\"endSaveChanges\\\":true,\\\"isCoAuthoring\\\":false,\\\"isExcel\\\":true,\\\"deleteIndex\\\":64,\\\"excelAdditionalInfo\\\":null,\\\"unlock\\\":false,\\\"releaseLocks\\\":false}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106538.670049,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"unSaveLock\\\",\\\"index\\\":-1,\\\"time\\\":1704106539000}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106539.7618878,
+    "opcode": 1,
+    "data": "2"
+  },
+  {
+    "type": "receive",
+    "time": 1704106539.803355,
+    "opcode": 1,
+    "data": "3"
+  },
+  {
+    "type": "send",
+    "time": 1704106541.953096,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"getLock\\\",\\\"block\\\":[{\\\"sheetId\\\":\\\"7\\\",\\\"type\\\":3,\\\"subType\\\":null,\\\"guid\\\":\\\"9cc6c560-ed56-a294-75e6-fbf49c068131\\\",\\\"rangeOrObjectId\\\":\\\"7\\\"}]}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106541.9976408,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"getLock\\\",\\\"locks\\\":[{\\\"time\\\":1704106521683,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"b43352b3-00f1-6a8e-942b-93d10abeaf14\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":0,\\\"r1\\\":0,\\\"c2\\\":0,\\\"r2\\\":0}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106525985,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"0ebeda5d-e2b7-ce0c-2b6a-d7c7668c149b\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":0,\\\"r1\\\":1,\\\"c2\\\":0,\\\"r2\\\":31}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106529151,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"8f1a7f03-36df-3e62-466e-87abac2e3f87\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":0,\\\"c2\\\":1,\\\"r2\\\":0}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106529967,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"ee5b63a3-e0ba-54e0-0571-8f66dcc5c6c1\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":1,\\\"c2\\\":1,\\\"r2\\\":1}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106530706,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"d4fe2d5e-50a3-708d-4b32-632b691e4876\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":2,\\\"c2\\\":1,\\\"r2\\\":2}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106534299,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":1,\\\"subType\\\":null,\\\"guid\\\":\\\"876e34f2-b720-3d7b-0aff-a85f08e678af\\\",\\\"rangeOrObjectId\\\":{\\\"c1\\\":1,\\\"r1\\\":3,\\\"c2\\\":1,\\\"r2\\\":31}},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106539432,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"6\\\",\\\"type\\\":3,\\\"subType\\\":null,\\\"guid\\\":\\\"c238b3b7-e7d5-1a5f-2c1d-368d04fbd6cf\\\",\\\"rangeOrObjectId\\\":\\\"6\\\"},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"},{\\\"time\\\":1704106542894,\\\"user\\\":\\\"1031\\\",\\\"block\\\":{\\\"sheetId\\\":\\\"7\\\",\\\"type\\\":3,\\\"subType\\\":null,\\\"guid\\\":\\\"9cc6c560-ed56-a294-75e6-fbf49c068131\\\",\\\"rangeOrObjectId\\\":\\\"7\\\"},\\\"nodeId\\\":\\\"3b9c09b3-dd29-55ea-93f8-d538ca0554f3\\\"}]}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106542.0141988,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"isSaveLock\\\"}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106542.0573359,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveLock\\\",\\\"saveLock\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106542.0582979,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveChanges\\\",\\\"changes\\\":\\\"[\\\\\\\"54;MgAAAAEBEgECAAAANwAABSIAAAAACAwAAABTAGgAZQBlAHQAMgABCAYAAADQY9Bj0GMCAQMB\\\\\\\"]\\\",\\\"startSaveChanges\\\":true,\\\"endSaveChanges\\\":true,\\\"isCoAuthoring\\\":false,\\\"isExcel\\\":true,\\\"deleteIndex\\\":65,\\\"excelAdditionalInfo\\\":null,\\\"unlock\\\":false,\\\"releaseLocks\\\":false}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106542.107297,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"unSaveLock\\\",\\\"index\\\":-1,\\\"time\\\":1704106543000}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106544.328987,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"isSaveLock\\\"}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106544.37217,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveLock\\\",\\\"saveLock\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106544.3729448,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveChanges\\\",\\\"changes\\\":\\\"[\\\\\\\"106;ZgAAAAEAEAECAAAANwABAQAAAAYAAAABAAAABgAAAABGAAAAAAIGAQIBAgkDHgAAAAAAAQkBEwAAAAAIBgAAADRsNXU5jQEAAgADAgECAAMJAxQAAAAAAAEJAQkAAAAAAAEAAgADAgACAA==\\\\\\\"]\\\",\\\"startSaveChanges\\\":true,\\\"endSaveChanges\\\":true,\\\"isCoAuthoring\\\":false,\\\"isExcel\\\":true,\\\"deleteIndex\\\":66,\\\"excelAdditionalInfo\\\":null,\\\"unlock\\\":false,\\\"releaseLocks\\\":false}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106544.4205298,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"unSaveLock\\\",\\\"index\\\":-1,\\\"time\\\":1704106545000}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106544.8048918,
+    "opcode": 1,
+    "data": "2"
+  },
+  {
+    "type": "receive",
+    "time": 1704106544.846454,
+    "opcode": 1,
+    "data": "3"
+  },
+  {
+    "type": "send",
+    "time": 1704106548.542213,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"isSaveLock\\\"}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106548.600375,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveLock\\\",\\\"saveLock\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106548.6012628,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveChanges\\\",\\\"changes\\\":\\\"[\\\\\\\"108;aAAAAAEAEAECAAAANwABAwAAAAAAAAADAAAAAAAAAABIAAAAAAIAAQIDAgkDIAAAAAAAAQkBFQAAAAAICAAAAGBPfVlKVTEAAQACAAMCAQIAAwkDFAAAAAAAAQkBCQAAAAAAAQACAAMCAAIA\\\\\\\"]\\\",\\\"startSaveChanges\\\":true,\\\"endSaveChanges\\\":true,\\\"isCoAuthoring\\\":false,\\\"isExcel\\\":true,\\\"deleteIndex\\\":67,\\\"excelAdditionalInfo\\\":null,\\\"unlock\\\":false,\\\"releaseLocks\\\":false}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106548.654408,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"unSaveLock\\\",\\\"index\\\":-1,\\\"time\\\":1704106549000}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106549.856139,
+    "opcode": 1,
+    "data": "2"
+  },
+  {
+    "type": "receive",
+    "time": 1704106549.8992238,
+    "opcode": 1,
+    "data": "3"
+  },
+  {
+    "type": "send",
+    "time": 1704106553.5661058,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"isSaveLock\\\"}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106553.6095269,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveLock\\\",\\\"saveLock\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106553.610466,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveChanges\\\",\\\"changes\\\":\\\"[\\\\\\\"108;aAAAAAEAEAECAAAANwABAwAAAAEAAAADAAAAAQAAAABIAAAAAAIBAQIDAgkDIAAAAAAAAQkBFQAAAAAICAAAAGBPfVlKVTIAAQACAAMCAQIAAwkDFAAAAAAAAQkBCQAAAAAAAQACAAMCAAIA\\\\\\\"]\\\",\\\"startSaveChanges\\\":true,\\\"endSaveChanges\\\":true,\\\"isCoAuthoring\\\":false,\\\"isExcel\\\":true,\\\"deleteIndex\\\":68,\\\"excelAdditionalInfo\\\":null,\\\"unlock\\\":false,\\\"releaseLocks\\\":false}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106553.656776,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"unSaveLock\\\",\\\"index\\\":-1,\\\"time\\\":1704106554000}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106554.906708,
+    "opcode": 1,
+    "data": "2"
+  },
+  {
+    "type": "receive",
+    "time": 1704106554.948797,
+    "opcode": 1,
+    "data": "3"
+  },
+  {
+    "type": "send",
+    "time": 1704106557.0922668,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"isSaveLock\\\"}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106557.135208,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveLock\\\",\\\"saveLock\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106557.137924,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveChanges\\\",\\\"changes\\\":\\\"[\\\\\\\"108;aAAAAAEAEAECAAAANwABAwAAAAIAAAADAAAAAgAAAABIAAAAAAICAQIDAgkDIAAAAAAAAQkBFQAAAAAICAAAAGBPfVlKVTMAAQACAAMCAQIAAwkDFAAAAAAAAQkBCQAAAAAAAQACAAMCAAIA\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAAAIAAAADAAAAAgAAAAD/AAAAAAICAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"108;aAAAAAEAEAECAAAANwABAwAAAAMAAAADAAAAAwAAAABIAAAAAAIDAQIDAgkDIAAAAAAAAQkBFQAAAAAICAAAAGBPfVlKVTQAAQACAAMCAQIAAwkDFAAAAAAAAQkBCQAAAAAAAQACAAMCAAIA\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAAAMAAAADAAAAAwAAAAD/AAAAAAIDAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"108;aAAAAAEAEAECAAAANwABAwAAAAQAAAADAAAABAAAAABIAAAAAAIEAQIDAgkDIAAAAAAAAQkBFQAAAAAICAAAAGBPfVlKVTUAAQACAAMCAQIAAwkDFAAAAAAAAQkBCQAAAAAAAQACAAMCAAIA\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAAAQAAAADAAAABAAAAAD/AAAAAAIEAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"108;aAAAAAEAEAECAAAANwABAwAAAAUAAAADAAAABQAAAABIAAAAAAIFAQIDAgkDIAAAAAAAAQkBFQAAAAAICAAAAGBPfVlKVTYAAQACAAMCAQIAAwkDFAAAAAAAAQkBCQAAAAAAAQACAAMCAAIA\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAAAUAAAADAAAABQAAAAD/AAAAAAIFAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"108;aAAAAAEAEAECAAAANwABAwAAAAYAAAADAAAABgAAAABIAAAAAAIGAQIDAgkDIAAAAAAAAQkBFQAAAAAICAAAAGBPfVlKVTcAAQACAAMCAQIAAwkDFAAAAAAAAQkBCQAAAAAAAQACAAMCAAIA\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAAAYAAAADAAAABgAAAAD/AAAAAAIGAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"108;aAAAAAEAEAECAAAANwABAwAAAAcAAAADAAAABwAAAABIAAAAAAIHAQIDAgkDIAAAAAAAAQkBFQAAAAAICAAAAGBPfVlKVTgAAQACAAMCAQIAAwkDFAAAAAAAAQkBCQAAAAAAAQACAAMCAAIA\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAAAcAAAADAAAABwAAAAD/AAAAAAIHAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"108;aAAAAAEAEAECAAAANwABAwAAAAgAAAADAAAACAAAAABIAAAAAAIIAQIDAgkDIAAAAAAAAQkBFQAAAAAICAAAAGBPfVlKVTkAAQACAAMCAQIAAwkDFAAAAAAAAQkBCQAAAAAAAQACAAMCAAIA\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAAAgAAAADAAAACAAAAAD/AAAAAAIIAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAAAkAAAADAAAACQAAAABKAAAAAAIJAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTEAMAABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAAAkAAAADAAAACQAAAAD/AAAAAAIJAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAAAoAAAADAAAACgAAAABKAAAAAAIKAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTEAMQABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAAAoAAAADAAAACgAAAAD/AAAAAAIKAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAAAsAAAADAAAACwAAAABKAAAAAAILAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTEAMgABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAAAsAAAADAAAACwAAAAD/AAAAAAILAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAAAwAAAADAAAADAAAAABKAAAAAAIMAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTEAMwABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAAAwAAAADAAAADAAAAAD/AAAAAAIMAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAAA0AAAADAAAADQAAAABKAAAAAAINAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTEANAABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAAA0AAAADAAAADQAAAAD/AAAAAAINAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAAA4AAAADAAAADgAAAABKAAAAAAIOAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTEANQABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAAA4AAAADAAAADgAAAAD/AAAAAAIOAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAAA8AAAADAAAADwAAAABKAAAAAAIPAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTEANgABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAAA8AAAADAAAADwAAAAD/AAAAAAIPAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAABAAAAADAAAAEAAAAABKAAAAAAIQAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTEANwABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAABAAAAADAAAAEAAAAAD/AAAAAAIQAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAABEAAAADAAAAEQAAAABKAAAAAAIRAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTEAOAABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAABEAAAADAAAAEQAAAAD/AAAAAAIRAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAABIAAAADAAAAEgAAAABKAAAAAAISAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTEAOQABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAABIAAAADAAAAEgAAAAD/AAAAAAISAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAABMAAAADAAAAEwAAAABKAAAAAAITAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTIAMAABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAABMAAAADAAAAEwAAAAD/AAAAAAITAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAABQAAAADAAAAFAAAAABKAAAAAAIUAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTIAMQABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAABQAAAADAAAAFAAAAAD/AAAAAAIUAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAABUAAAADAAAAFQAAAABKAAAAAAIVAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTIAMgABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAABUAAAADAAAAFQAAAAD/AAAAAAIVAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAABYAAAADAAAAFgAAAABKAAAAAAIWAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTIAMwABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAABYAAAADAAAAFgAAAAD/AAAAAAIWAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAABcAAAADAAAAFwAAAABKAAAAAAIXAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTIANAABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAABcAAAADAAAAFwAAAAD/AAAAAAIXAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAABgAAAADAAAAGAAAAABKAAAAAAIYAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTIANQABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAABgAAAADAAAAGAAAAAD/AAAAAAIYAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAABkAAAADAAAAGQAAAABKAAAAAAIZAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTIANgABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAABkAAAADAAAAGQAAAAD/AAAAAAIZAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAABoAAAADAAAAGgAAAABKAAAAAAIaAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTIANwABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAABoAAAADAAAAGgAAAAD/AAAAAAIaAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAABsAAAADAAAAGwAAAABKAAAAAAIbAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTIAOAABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAABsAAAADAAAAGwAAAAD/AAAAAAIbAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\",\\\\\\\"110;agAAAAEAEAECAAAANwABAwAAABwAAAADAAAAHAAAAABKAAAAAAIcAQIDAgkDIgAAAAAAAQkBFwAAAAAICgAAAGBPfVlKVTIAOQABAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\",\\\\\\\"291;HwEAAAEAEgECAAAANwABAwAAABwAAAADAAAAHAAAAAD/AAAAAAIcAQIDAgkR8AAAAAAJD4sAAAAACRAMAAAAAAIAAQkjAgAAAAEAAQkQDAAAAAACAAEJIwIAAAABAAIJEAwAAAAAAgABCSMCAAAAAQADCRAMAAAAAAIAAQkjAgAAAAEABAkQDAAAAAACAAEJIwIAAAABAAUJEAwAAAAAAgABCSMCAAAAAQAGCRAMAAAAAAIAAQkjAgAAAAEABwQACAQAAQkNEAAAAAAJZAcAAAAAAhEBAAIAAQACAAMJDhYAAAAACA4AAABHAGUAbgBlAHIAYQBsAAEBBAkSFAAAAAAAAQIAAgIAAwQABAIABQIBBgQABQAGAgAHAAgACQAKAAMA\\\\\\\"]\\\",\\\"startSaveChanges\\\":true,\\\"endSaveChanges\\\":true,\\\"isCoAuthoring\\\":false,\\\"isExcel\\\":true,\\\"deleteIndex\\\":69,\\\"excelAdditionalInfo\\\":null,\\\"unlock\\\":false,\\\"releaseLocks\\\":false}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106557.197079,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"unSaveLock\\\",\\\"index\\\":-1,\\\"time\\\":1704106558000}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106559.897662,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"isSaveLock\\\"}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106559.940935,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveLock\\\",\\\"saveLock\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106559.941854,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveChanges\\\",\\\"changes\\\":\\\"[\\\\\\\"55;MwAAAAEAAwECAAAANwABAwAAABAAAAADAAAAEAAAAAATAAAAAAIQAQIDAgkiBAAAAAAA/wADAA==\\\\\\\"]\\\",\\\"startSaveChanges\\\":true,\\\"endSaveChanges\\\":true,\\\"isCoAuthoring\\\":false,\\\"isExcel\\\":true,\\\"deleteIndex\\\":123,\\\"excelAdditionalInfo\\\":null,\\\"unlock\\\":false,\\\"releaseLocks\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106559.9547758,
+    "opcode": 1,
+    "data": "2"
+  },
+  {
+    "type": "receive",
+    "time": 1704106559.9882479,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"unSaveLock\\\",\\\"index\\\":-1,\\\"time\\\":1704106560000}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106559.99771,
+    "opcode": 1,
+    "data": "3"
+  },
+  {
+    "type": "send",
+    "time": 1704106561.452911,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"isSaveLock\\\"}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106561.498699,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveLock\\\",\\\"saveLock\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106561.499404,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveChanges\\\",\\\"changes\\\":\\\"[\\\\\\\"106;ZgAAAAEACwECAAAANwABAwAAAAsAAAADAAAACwAAAABGAAAAAAILAQIDAgkNIgAAAAAJZBkAAAAAAhIBCSIEAAAAAP//AAIJIgQAAAAA//8AAQADCQ0QAAAAAAlkBwAAAAACEQEAAgABAA==\\\\\\\"]\\\",\\\"startSaveChanges\\\":true,\\\"endSaveChanges\\\":true,\\\"isCoAuthoring\\\":false,\\\"isExcel\\\":true,\\\"deleteIndex\\\":124,\\\"excelAdditionalInfo\\\":null,\\\"unlock\\\":false,\\\"releaseLocks\\\":false}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106561.548455,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"unSaveLock\\\",\\\"index\\\":-1,\\\"time\\\":1704106562000}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106565.00264,
+    "opcode": 1,
+    "data": "2"
+  },
+  {
+    "type": "receive",
+    "time": 1704106565.0450919,
+    "opcode": 1,
+    "data": "3"
+  },
+  {
+    "type": "send",
+    "time": 1704106570.0596669,
+    "opcode": 1,
+    "data": "2"
+  },
+  {
+    "type": "receive",
+    "time": 1704106570.102037,
+    "opcode": 1,
+    "data": "3"
+  },
+  {
+    "type": "send",
+    "time": 1704106574.934306,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"isSaveLock\\\"}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106574.9772258,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveLock\\\",\\\"saveLock\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106574.9780478,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveChanges\\\",\\\"changes\\\":\\\"[\\\\\\\"106;ZgAAAAEACwECAAAANwABAwAAABgAAAADAAAAGAAAAABGAAAAAAIYAQIDAgkNIgAAAAAJZBkAAAAAAhIBCSIEAAAAAADAAAIJIgQAAAAAAMAAAQADCQ0QAAAAAAlkBwAAAAACEQEAAgABAA==\\\\\\\",\\\\\\\"106;ZgAAAAEACwECAAAANwABAwAAABkAAAADAAAAGQAAAABGAAAAAAIZAQIDAgkNIgAAAAAJZBkAAAAAAhIBCSIEAAAAAADAAAIJIgQAAAAAAMAAAQADCQ0QAAAAAAlkBwAAAAACEQEAAgABAA==\\\\\\\",\\\\\\\"106;ZgAAAAEACwECAAAANwABAwAAABoAAAADAAAAGgAAAABGAAAAAAIaAQIDAgkNIgAAAAAJZBkAAAAAAhIBCSIEAAAAAADAAAIJIgQAAAAAAMAAAQADCQ0QAAAAAAlkBwAAAAACEQEAAgABAA==\\\\\\\",\\\\\\\"106;ZgAAAAEACwECAAAANwABAwAAABsAAAADAAAAGwAAAABGAAAAAAIbAQIDAgkNIgAAAAAJZBkAAAAAAhIBCSIEAAAAAADAAAIJIgQAAAAAAMAAAQADCQ0QAAAAAAlkBwAAAAACEQEAAgABAA==\\\\\\\",\\\\\\\"106;ZgAAAAEACwECAAAANwABAwAAABwAAAADAAAAHAAAAABGAAAAAAIcAQIDAgkNIgAAAAAJZBkAAAAAAhIBCSIEAAAAAADAAAIJIgQAAAAAAMAAAQADCQ0QAAAAAAlkBwAAAAACEQEAAgABAA==\\\\\\\"]\\\",\\\"startSaveChanges\\\":true,\\\"endSaveChanges\\\":true,\\\"isCoAuthoring\\\":false,\\\"isExcel\\\":true,\\\"deleteIndex\\\":125,\\\"excelAdditionalInfo\\\":null,\\\"unlock\\\":false,\\\"releaseLocks\\\":false}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106575.026064,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"unSaveLock\\\",\\\"index\\\":-1,\\\"time\\\":1704106575000}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106575.106458,
+    "opcode": 1,
+    "data": "2"
+  },
+  {
+    "type": "receive",
+    "time": 1704106575.1615489,
+    "opcode": 1,
+    "data": "3"
+  },
+  {
+    "type": "send",
+    "time": 1704106580.16303,
+    "opcode": 1,
+    "data": "2"
+  },
+  {
+    "type": "receive",
+    "time": 1704106580.2111218,
+    "opcode": 1,
+    "data": "3"
+  },
+  {
+    "type": "send",
+    "time": 1704106580.90254,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"isSaveLock\\\"}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106580.945215,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveLock\\\",\\\"saveLock\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106580.9462118,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveChanges\\\",\\\"changes\\\":\\\"[\\\\\\\"61;OQAAAAEAAwECAAAANwABAwAAAAIAAAADAAAAAgAAAAAZAAAAAAICAQIDAgkjCgAAAAIBAP9//7//378DAA==\\\\\\\",\\\\\\\"61;OQAAAAEAAwECAAAANwABAwAAAAMAAAADAAAAAwAAAAAZAAAAAAIDAQIDAgkjCgAAAAIBAP9//7//378DAA==\\\\\\\",\\\\\\\"61;OQAAAAEAAwECAAAANwABAwAAAAQAAAADAAAABAAAAAAZAAAAAAIEAQIDAgkjCgAAAAIBAP9//7//378DAA==\\\\\\\"]\\\",\\\"startSaveChanges\\\":true,\\\"endSaveChanges\\\":true,\\\"isCoAuthoring\\\":false,\\\"isExcel\\\":true,\\\"deleteIndex\\\":130,\\\"excelAdditionalInfo\\\":null,\\\"unlock\\\":false,\\\"releaseLocks\\\":false}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106580.9926488,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"unSaveLock\\\",\\\"index\\\":-1,\\\"time\\\":1704106581000}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106584.6115148,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"isSaveLock\\\"}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106584.655386,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveLock\\\",\\\"saveLock\\\":false}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106584.655998,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"saveChanges\\\",\\\"changes\\\":\\\"[\\\\\\\"116;cAAAAAEAEAECAAAANwABBgAAAA8AAAAGAAAADwAAAABQAAAAAAIPAQIGAgkDKAAAAAAAAQkBHQAAAAAIEAAAAFtPcVxvcKF7U2JLYq9yxIkBAAIAAwIBAgADCQMUAAAAAAABCQEJAAAAAAABAAIAAwIAAgA=\\\\\\\"]\\\",\\\"startSaveChanges\\\":true,\\\"endSaveChanges\\\":true,\\\"isCoAuthoring\\\":false,\\\"isExcel\\\":true,\\\"deleteIndex\\\":133,\\\"excelAdditionalInfo\\\":null,\\\"unlock\\\":false,\\\"releaseLocks\\\":false}\"]"
+  },
+  {
+    "type": "receive",
+    "time": 1704106584.7308178,
+    "opcode": 1,
+    "data": "42[\"message\",\"{\\\"type\\\":\\\"unSaveLock\\\",\\\"index\\\":-1,\\\"time\\\":1704106585000}\"]"
+  },
+  {
+    "type": "send",
+    "time": 1704106585.218227,
+    "opcode": 1,
+    "data": "2"
+  },
+  {
+    "type": "receive",
+    "time": 1704106585.260939,
+    "opcode": 1,
+    "data": "3"
+  },
+  {
+    "type": "send",
+    "time": 1704106590.2678308,
+    "opcode": 1,
+    "data": "2"
+  },
+  {
+    "type": "receive",
+    "time": 1704106590.3089108,
+    "opcode": 1,
+    "data": "3"
+  }
+]

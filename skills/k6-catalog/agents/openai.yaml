@@ -1,0 +1,4 @@
+interface:
+  display_name: "K6 接口/场景目录"
+  short_description: "检索并列出 k6auto 的接口与场景目录，生成索引"
+  default_prompt: "Use $k6-catalog to 查询或列出当前项目的接口与场景"
