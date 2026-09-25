@@ -1,4 +1,4 @@
-# k6auto - 全栈自动化测试框架
+# k6auto - Full-Stack Automation Testing Framework
 
 <div align="center">
 
@@ -7,158 +7,163 @@
 [![Docker](https://img.shields.io/badge/Deploy-Docker-blue)](https://www.docker.com/)
 [![Kubernetes](https://img.shields.io/badge/Orchestration-K8s-informational)](https://kubernetes.io/)
 
-**基于 k6 打造的企业级全栈自动化测试解决方案**
+**An enterprise-grade, full-stack automation testing solution built on k6**
+
+[中文](./README_zh-CN.md)
 
 </div>
 
 ---
 
-## 演示视频
+## Demo Videos
 
-- [k6auto 演示视频](https://www.bilibili.com/video/BV15pNH6vEWQ)
-- [k6auto 前端web性能](https://www.bilibili.com/video/BV1Fo8261ERP)
-
----
-
-## 为什么选择 k6auto
-
-传统的测试工具往往只能覆盖单一测试类型，而 **k6auto** 打破了这个限制。我们基于 [k6](https://k6.io) 核心引擎，通过自研扩展和工程化封装，打造了一个真正的一体化测试框架。
-
-### 核心优势
-
-| 特性 | 说明 | 价值 |
-|------|------|------|
-| **自研 k6 扩展生态** | 自研 `xk6-xxx` 高性能日志、`xk6-file` 文件操作等扩展 | 突破原生 k6 功能边界，满足复杂业务场景 |
-| **全测试类型覆盖** | API 自动化 + 接口性能 + 前端性能 + WebSocket + 数据库 + 中间件 | 一套框架，全链路质量保障 |
-| **Allure 企业级报告** | 美观的 HTML 报告，支持步骤追踪、失败分析、历史趋势 | 让测试结果一目了然，提升团队协作效率 |
-| **云原生架构** | 完整的 Dockerfile + K8s Deployment 配置 | 轻松实现容器化部署和弹性扩缩容 |
-| **高性能日志引擎** | 基于 Uber Zap 的高性能日志扩展 | 海量并发下依然保持稳定的日志记录 |
-| **WebSocket 实战** | 支持多人协同文档、实时通信场景测试 | 覆盖现代 Web 应用的核心交互场景 |
-| **场景化编排** | 支持 setup/teardown、数据驱动、复杂业务流程 | 灵活应对各种业务测试需求 |
-| **AI 驱动开发** | 集成 `k6skill`，覆盖接口封装、场景编排、性能压测与调试 | 提升测试脚本开发效率，降低人工编写成本 |
+- [k6auto demo video](https://www.bilibili.com/video/BV15pNH6vEWQ)
+- [k6auto frontend web performance](https://www.bilibili.com/video/BV1Fo8261ERP)
 
 ---
 
-## 技术架构
+## Why k6auto
+
+Traditional testing tools usually cover only a single testing type, while **k6auto** breaks that limitation. Built on the [k6](https://k6.io) core engine, it combines custom extensions and engineering packaging into a truly all-in-one testing framework.
+
+### Key Advantages
+
+| Feature | Description | Value |
+|---------|-------------|-------|
+| **Custom k6 extension ecosystem** | Custom high-performance logging (`xk6-xxx`), file operations (`xk6-file`), and more | Goes beyond native k6 limits to satisfy complex business scenarios |
+| **Full testing coverage** | API automation + API performance + frontend performance + WebSocket + database + middleware | One framework for end-to-end quality assurance |
+| **Enterprise Allure reports** | Beautiful HTML reports with step tracking, failure analysis, and historical trends | Makes results clear and improves team collaboration |
+| **Cloud-native architecture** | Complete Dockerfile and Kubernetes Deployment configuration | Easy containerized deployment and elastic scaling |
+| **High-performance logging engine** | A high-performance logging extension based on Uber Zap | Stable logging under massive concurrency |
+| **Real-world WebSocket support** | Multi-user collaborative documents and real-time communication scenarios | Covers core interactions of modern web applications |
+| **Scenario orchestration** | setup/teardown, data-driven testing, and complex business flows | Flexible handling of diverse test requirements |
+| **AI-assisted development** | Integrated `k6skill` for API wrapping, scenario orchestration, performance testing, and debugging | Boosts script development efficiency and reduces manual work |
+
+---
+
+## Architecture
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────────┐
-│                           k6auto 自动化测试框架                          │
+│                      k6auto Automation Testing Framework                  │
 ├──────────────────────────────────────────────────────────────────────────┤
-│  API 自动化层      │  性能测试层       │  前端性能层      │  WebSocket 层 │
-│  ├─ apiTest        │  ├─ performance   │  ├─ browser      │  ├─ scen      │
-│  ├─ 场景编排       │  ├─ 高并发压测    │  ├─ Core Web     │  ├─ 协同文档  │
-│  ├─ 数据驱动       │  ├─ 统一断言      │  ├─ 页面交互     │  ├─ 实时通信  │
-│  └─ 通用日志       │  └─ 数据采集      │  └─ 可视化指标   │  └─ 场景定义  │
+│  API Automation     │  Performance       │  Frontend Perf   │  WebSocket  │
+│  ├─ apiTest         │  ├─ performance    │  ├─ browser      │  ├─ scen    │
+│  ├─ scenarios       │  ├─ load testing   │  ├─ Core Web     │  ├─ collab  │
+│  ├─ data-driven     │  ├─ assertions     │  ├─ interactions │  ├─ realtime│
+│  └─ shared logging  │  └─ data capture   │  └─ visual metrics│ └─ scenes  │
 ├──────────────────────────────────────────────────────────────────────────┤
-│  自研 k6 扩展层                                                           │
-│  ├─ xk6-xxx: 高性能结构化日志         ├─ xk6-sql: 数据库操作           │
-│  ├─ xk6-file: 文件读写支持            └─ 更多扩展                        │
+│  Custom k6 extensions                                                     │
+│  ├─ xk6-xxx: high-performance structured logging                         │
+│  ├─ xk6-sql: database operations                                        │
+│  └─ xk6-file: file read/write support                                   │
 ├──────────────────────────────────────────────────────────────────────────┤
-│  基础设施层                                                              │
-│  ├─ Allure 报告      ├─ Docker 容器化    ├─ Kubernetes 编排             │
-│  ├─ Chai 断言库      ├─ PostgreSQL       ├─ Redis 缓存                  │
-│  └─ 消息/协同能力    └─ 其他中间件                                             │
+│  Infrastructure                                                           │
+│  ├─ Allure reports   ├─ Docker           ├─ Kubernetes                   │
+│  ├─ Chai assertions  ├─ PostgreSQL       ├─ Redis                        │
+│  └─ messaging/collab └─ other middleware                                 │
 ├──────────────────────────────────────────────────────────────────────────┤
-│  AI 辅助层 (k6skill)                                                     │
-│  ├─ curl 转接口        ├─ 业务流程转场景                                  │
-│  ├─ 性能压测场景       └─ 场景调试执行                                     │
+│  AI assistance (k6skill)                                                  │
+│  ├─ curl to API        ├─ business flow to scenario                      │
+│  ├─ performance scene  └─ scenario debugging                             │
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 快速开始
+## Quick Start
 
-### 1. 安装 Node.js 依赖
+### 1. Install Node.js dependencies
 
-项目依赖通过 npm 管理，首次使用前需安装（当前运行时依赖为 `jsonpath-plus`，`chai`、`uuid` 使用仓库内置副本）：
+Dependencies are managed by npm. Install them before the first run (the current runtime dependency is `jsonpath-plus`; `chai` and `uuid` are bundled in the repository):
 
 ```bash
 npm install
 ```
 
-安装完成后会在项目根目录生成 `node_modules/` 目录，该目录已加入 `.gitignore`，不会被提交。
+This creates a `node_modules/` directory, which is already listed in `.gitignore` and will not be committed.
 
-### 2. 构建自定义 k6 二进制
+### 2. Build a custom k6 binary
 
-我们使用 [xk6](https://github.com/grafana/xk6) 构建包含自定义扩展的 k6 二进制：
+We use [xk6](https://github.com/grafana/xk6) to build a k6 binary that includes custom extensions:
 
 ```bash
-# 安装 xk6
-# go version 大于 1.23.2即可
+# Install xk6
+# Go 1.23.2 or later is sufficient
 go install go.k6.io/xk6@v1.4.4
 
-# 构建包含扩展的 k6
+# Build k6 with extensions
 xk6 build --verbose --k6-version v1.7.1 \
   --with github.com/Mistyrain520/xk6-zap@v1.6.0 \
   --with github.com/grafana/xk6-sql@v1.0.5 \
   --with github.com/Mistyrain520/xk6-file@v1.0.0 \
   --with github.com/grafana/xk6-kubernetes@v0.10.3
 
-# 检查扩展是否编译成功
+# Verify the extensions compiled successfully
 .\k6.exe version
 ```
 
-### 3. Docker 一键部署
+### 3. One-click Docker deployment
 
 ```bash
-# 使用本地 Dockerfile 构建镜像
+# Build the image using the local Dockerfile
 docker build -f Dockerfile -t k6auto:k6-v1.7.1 .
 
+# Run tests
+docker run -v $(pwd):/home/xk6 k6auto:k6-v1.7.1 ./k6 run main/main.js
 ```
 
-### 4. Kubernetes 分布式执行
+### 4. Distributed execution on Kubernetes
 
 ```bash
-# 部署 k6 worker 集群参考
+# Deploy the k6 worker cluster (reference)
 kubectl apply -f k6-worker-deployment.yaml
 kubectl apply -f k6-worker-service.yaml
 ```
 
 ---
 
-## 功能模块详解
+## Feature Modules
 
-### API 自动化测试
+### API Automation Testing
 
-采用 **分层架构设计**，实现业务与协议分离：
+A layered architecture separates business logic from protocol details:
 
 ```javascript
-// apiTest/ - 底层 API 封装
+// apiTest/ - low-level API wrappers
 export function apiCreateXxx(params) {
-  // 封装 HTTP 请求细节
+  // Encapsulate HTTP request details
 }
 
-// scenarios/ - 业务场景编排
+// scenarios/ - business scenario orchestration
 export function xxxFlow() {
-  // 组合 API 实现完整业务流程
+  // Combine APIs into a complete business flow
   const repo = apiCreateXxxRepository({...});
   const item = apiCreateXxx({...});
   const updateRes = apiBatchUpdateXxx({...});
 }
 ```
 
-**生成 Allure 报告：**
+**Generate Allure reports:**
 
 ```bash
-# 执行测试，自动生成结果目录（如 report/allure/2026-06-04）
+# Run tests; a result directory (e.g. report/allure/2026-06-04) is generated automatically
 .\k6.exe run .\main\main.js
 
-# 查看报告
+# View the report
 allure serve .\report\allure\2026-06-04\
 ```
 
-![API 测试报告示例](./report/newreport1.png)
+![API test report example](./report/newreport1.png)
 
 ---
 
-### API 性能测试
+### API Performance Testing
 
-与自动化测试共用 API 层，无缝切换：
+Performance tests share the API layer with automation tests, allowing seamless switching:
 
 ```javascript
-// performance.js - 性能测试配置
+// performance.js - performance test configuration
 export const options = {
   discardResponseBodies: false,
   scenarios: {
@@ -173,23 +178,23 @@ export const options = {
 }
 ```
 
-**接入 InfluxDB + Grafana：**
+**Connect to InfluxDB + Grafana:**
 
 ```bash
 .\k6.exe run --out influxdb=http://localhost:8086/mydb .\performance.js
 ```
 
-![性能测试报告示例](./report/newreport2.png)
+![Performance test report example](./report/newreport2.png)
 
 ---
 
-### 前端性能测试（Browser）
+### Frontend Performance Testing (Browser)
 
-基于 k6 Browser 模块，支持：
+Built on the k6 Browser module, supporting:
 
-- **Core Web Vitals** 指标采集（LCP、FID、CLS）
-- **真实浏览器交互** 模拟（点击、输入、导航）
-- **混合协议测试**（Browser + HTTP 并行）
+- **Core Web Vitals** collection (LCP, FID, CLS)
+- **Real browser interactions** (click, input, navigation)
+- **Mixed-protocol testing** (Browser + HTTP in parallel)
 
 ```javascript
 import { browser } from 'k6/experimental/browser'
@@ -197,50 +202,50 @@ import { browser } from 'k6/experimental/browser'
 export async function browserTest() {
   const page = browser.newPage()
   await page.goto('https://example.com/your-page-path')
-  
-  // 模拟用户点击
+
+  // Simulate a user click
   const productCard = page.locator('[class="xxx"]')
   await productCard.click()
-  
-  // 自动采集 Web Vitals 指标
+
+  // Web Vitals metrics are collected automatically
 }
 ```
 
 ---
 
-### WebSocket 实时测试
+### WebSocket Real-time Testing
 
-支持复杂的 **多人协同场景**，例如在线文档编辑：
+Supports complex **multi-user collaboration** scenarios, such as online document editing:
 
 ```javascript
-// 单人/多人协同文档自动化与压测
-// 支持 Word、PPT、Excel、Page 等多种类型文档
+// Automation and load testing for single-user / multi-user collaborative documents
+// Supports Word, PPT, Excel, Page, and other document types
 
 import ws from 'k6/ws'
 
 ws.connect(url, params, function (socket) {
   socket.on('open', () => {
-    socket.sendBinary(binaryData)  // 发送二进制数据
+    socket.sendBinary(binaryData)  // Send binary data
   })
   socket.on('binaryMessage', (msg) => {
-    // 处理实时同步消息
+    // Handle real-time sync messages
   })
 })
 ```
 
 ---
 
-### AI 驱动：k6skill
+### AI-assisted: k6skill
 
-**k6auto** 已整合统一的 `k6skill`，在当前仓库内支持接口封装、业务场景编排、性能压测场景和调试入口更新。它会读取项目现有代码，沿用 `apiTest/`、`scenarios/`、`scenario_debug.js` 等目录结构和命名风格，尽量复用已有方法并保持最小修改。
+**k6auto** integrates a unified `k6skill` that supports API wrapping, business scenario orchestration, performance scenes, and debug entry updates in this repository. It reads existing project code and follows the directory structure and naming conventions of `apiTest/`, `scenarios/`, `scenario_debug.js`, and other modules, reusing existing methods and keeping changes minimal.
 
-#### 使用方式
+#### Usage
 
-根据任务类型直接描述需求即可：
+Simply describe the requirement according to the task type:
 
 ```bash
-# 1. curl 转接口
-把这个 curl 转成项目里的接口方法：
+# 1. Convert curl to an API method
+Convert this curl into a project API method:
 curl -X POST 'http://api.example.com/xxx' \
   -H 'Content-Type: application/json' \
   -H 'Cookie: session=xxx' \
@@ -248,49 +253,49 @@ curl -X POST 'http://api.example.com/xxx' \
   -H 'X-Session-Token: xxx' \
   -d '{"name":"xxx","xxxField":"abc123"}'
 
-# 2. 业务流程转场景
-帮我在 scenarios/xxx.js 里实现一个场景：先创建 A，再更新 B，最后校验 C。
+# 2. Convert a business flow into a scenario
+Implement a scenario in scenarios/xxx.js: first create A, then update B, and finally verify C.
 
-# 3. 性能压测场景
-基于现有接口写一个 100 并发、持续 5 分钟的压测场景。
+# 3. Create a performance scene
+Write a load test with 100 VUs running for 5 minutes based on the existing APIs.
 
-# 4. 场景调试
-帮我调试 scenarios/xxx.js 里的 xxxFlow，并更新 scenario_debug.js。
+# 4. Debug a scenario
+Help me debug xxxFlow in scenarios/xxx.js and update scenario_debug.js.
 ```
 
-#### 智能特性
+#### Smart Features
 
-| 能力 | 说明 |
-|------|------|
-| **统一 Skill 入口** | `k6skill` 统一承接 curl 转接口、场景编写、性能压测和调试执行 |
-| **自动对齐项目风格** | 生成或修改代码时优先适配现有 `apiTest/`、`scenarios/` 和通用请求封装 |
-| **重复接口识别** | 新增接口前会搜索已有方法、路由和描述，避免重复封装 |
-| **敏感信息规避** | 不把 curl 中的 Cookie、token、租户或固定业务数据直接写死到代码 |
-| **场景化编排** | 支持将多步骤业务流程沉淀为可复用的场景方法 |
-| **调试闭环** | 可更新 `scenario_debug.js` 并执行指定场景，结合日志定位问题 |
+| Capability | Description |
+|-----------|-------------|
+| **Unified skill entry** | `k6skill` handles curl-to-API, scenario authoring, performance testing, and debug execution |
+| **Project style alignment** | Generated or modified code adapts to existing `apiTest/`, `scenarios/`, and shared request wrappers |
+| **Duplicate API detection** | Searches existing methods, routes, and descriptions before adding a new API |
+| **Sensitive information avoidance** | Does not hard-code cookies, tokens, tenants, or fixed business data from curl |
+| **Scenario orchestration** | Turns multi-step business flows into reusable scenario methods |
+| **Debug loop** | Updates `scenario_debug.js` and runs a specific scenario, using logs to locate issues |
 
-#### Skill 配置
+#### Skill Configuration
 
-统一配置位于 `skills/k6skill/SKILL.md`，按任务类型拆分引用文档：
+The unified configuration is in `skills/k6skill/SKILL.md`, with reference documents split by task type:
 
-- `references/curl-to-api.md`：curl 转接口
-- `references/scenario-authoring.md`：业务场景编写
-- `references/performance-scene.md`：性能压测场景
-- `references/scenario-debug.md`：场景调试执行
+- `references/curl-to-api.md`: curl to API
+- `references/scenario-authoring.md`: business scenario authoring
+- `references/performance-scene.md`: performance scenes
+- `references/scenario-debug.md`: scenario debugging
 
-#### 使用场景
+#### Use Cases
 
-- **接口快速封装**：从浏览器 DevTools 复制 curl，快速生成接口代码。
-- **业务流程沉淀**：把创建、编辑、审批、清理等多步骤流程编排成场景。
-- **性能压测复用**：基于已有 API 和场景快速生成压测入口。
-- **单场景调试**：更新调试入口并执行指定场景，快速定位失败原因。
-- **团队协作**：统一接口、场景和调试脚本的编写风格，降低审查成本。
+- **Rapid API wrapping**: copy a curl from browser DevTools and quickly generate API code.
+- **Business flow reuse**: orchestrate create, edit, approve, and cleanup flows into scenarios.
+- **Performance test reuse**: quickly generate load test entries from existing APIs and scenarios.
+- **Single-scenario debugging**: update the debug entry and run a specific scenario to find failures fast.
+- **Team collaboration**: unify the style of APIs, scenarios, and debug scripts to lower review cost.
 
 ---
 
-### 数据库与中间件
+### Database and Middleware
 
-通过 `xk6-sql` 扩展，原生支持 SQL 操作：
+Native SQL operations are supported through the `xk6-sql` extension:
 
 ```javascript
 import sql from 'k6/x/sql'
@@ -299,45 +304,46 @@ import driver from 'k6/x/sql/driver/postgres'
 const db = sql.open(driver, 'postgres://user:pass@host/db')
 
 export function setup() {
-  // 测试前准备数据
+  // Prepare data before the test
   const data = setupdata()
   data.xxxGroup = { objectId: getXxxGroup(db, data.xxxWorkspace.objectId) }
   return data
 }
 
 export function teardown(data) {
-  // 测试后清理数据
+  // Clean up data after the test
   teardowndata(data)
 }
 ```
 
 ---
 
-## 报告展示
+## Reports
 
-### Allure 可视化报告
+### Allure Visual Reports
 
-我们集成了 **Allure** 测试报告框架，提供企业级的可视化报告体验。
+We integrate the **Allure** reporting framework to provide an enterprise-grade visual reporting experience.
 
-#### 报告总览 - 测试执行全局统计
+#### Overview - global test execution statistics
 
-展示测试套件的执行概况，包括用例总数、通过率、失败率、执行时长等核心指标，一目了然掌握测试质量。
+Shows the overall execution status of a test suite, including total cases, pass rate, failure rate, duration, and other core metrics.
 
-![Allure 报告总览](./report/newreport1.png)
+![Allure report overview](./report/newreport1.png)
 
-#### 测试详情 - 单用例深度追踪
+#### Details - per-case deep tracing
 
-每个测试用例都包含完整的执行轨迹：
-- **完整 curl 命令**：方便快速定位问题
-- **请求信息**：HTTP 请求头、请求体、响应数据
-- **断言结果**：每个检查点的通过/失败状态
-- **错误详情（完整返回信息）**：成功失败都有完整返回信息，方便排查问题
+Each test case includes a complete execution trace:
 
-![Allure 测试详情](./report/newreport2.png)
+- **Full curl command**: helps locate issues quickly
+- **Request information**: HTTP headers, request body, and response data
+- **Assertion results**: pass/fail status of every checkpoint
+- **Error details (full response)**: full response for both success and failure, making troubleshooting easier
 
-![Allure 历史趋势](./report/newreport3.png)
+![Allure test details](./report/newreport2.png)
 
-### Grafana 实时监控
+![Allure historical trend](./report/newreport3.png)
+
+### Grafana Real-time Monitoring
 
 ```json
 {
@@ -359,93 +365,94 @@ export function teardown(data) {
 
 ---
 
-## 项目结构
+## Project Structure
 
 ```text
 k6auto/
-├─ apiTest/               # API 底层封装（业务无关）
+├─ apiTest/               # Low-level API wrappers (business-agnostic)
 │  ├─ core/
 │  ├─ xxx.js
 │  ├─ xxx/
 │  └─ ...
-├─ scenarios/             # 业务场景编排
+├─ scenarios/             # Business scenario orchestration
 │  ├─ xxx_scenarios/
 │  ├─ setupdata.js
 │  ├─ teardown.js
 │  └─ xxx.js
-├─ capabilities/          # k6 全栈能力
+├─ capabilities/          # Full-stack k6 capabilities
 │  ├─ browser/
 │  ├─ grpc/
 │  ├─ k8s/
 │  └─ k6redis/
-├─ websocket/             # 协同文档 / WebSocket 场景
-├─ tool/                  # 通用工具（UUID、断言、JSONPath、数据库等）
-├─ logger/                # 日志处理
-├─ config/                # 配置管理
-├─ skills/                # AI Skill 配置
-├─ report/                # 报告截图示例
-├─ main/                  # 入口（main.js 调度器 + main_dev1/main_develop）
-├─ performance.js         # 性能测试入口
-├─ debug.js               # 单接口调试入口
-├─ scenario_debug.js      # 单场景调试入口
-├─ Dockerfile             # 容器化构建
-└─ k6-worker-*.yaml       # K8s 部署配置
+├─ websocket/             # Collaborative document / WebSocket scenarios
+├─ tool/                  # Common utilities (UUID, assertions, JSONPath, database, etc.)
+├─ logger/                # Logging
+├─ config/                # Configuration management
+├─ skills/                # AI skill configuration
+├─ report/                # Report screenshot examples
+├─ main/                  # Entry points (main.js dispatcher + main_dev1/main_develop)
+├─ performance.js         # Performance test entry
+├─ debug.js               # Single-API debug entry
+├─ scenario_debug.js      # Single-scenario debug entry
+├─ Dockerfile             # Containerized build
+└─ k6-worker-*.yaml       # Kubernetes deployment configuration
 ```
 
 ---
 
-## 功能清单
+## Feature Checklist
 
-- [x] **k6 API 自动化** - 完整的分层架构，支持复杂业务场景
-  - [x] 分层架构设计（`apiTest/` + `scenarios/`）
-  - [x] 统一 HTTP 请求封装
-  - [x] 自动化 Allure 报告生成
-  - [x] curl 命令自动记录到报告
-  - [x] 报告测试步骤采用展开运算符，动态可选断言
-  - [x] 场景化编排（setup/teardown）
-  - [x] 数据驱动测试（SharedArray）
-  - [x] 通用断言封装（Assertions）
-  - [x] 登录态自动管理
-  - [x] JSONPath 响应提取
-  - [x] 请求参数容错处理
-  - [ ] 对接 browser，接入图片显示？
-- [x] **k6 API 性能测试** - 无缝对接自动化用例，支持多种负载模式
-- [x] **k6 Browser 前端性能** - Core Web Vitals 指标采集
-- [x] **Chai.js 断言集成** - 丰富的断言能力
-- [x] **自研 xk6-xxx 日志扩展** - 高性能结构化日志
-- [x] **PostgreSQL 数据库支持** - 原生 SQL 操作能力
-- [ ] **多数据库适配器？**
-- [x] **WebSocket 实战** - 单人/多人协同文档自动化与压测
-- [x] **Allure 企业级报告** - 美观的 HTML 报告与历史趋势
-- [x] **Docker 容器化** - 完整的容器化支持
-- [x] **Kubernetes 编排** - 分布式测试执行能力
-- [x] **AI 驱动 k6skill** - 统一支持接口封装、场景编排、性能压测和调试执行
-  - [x] curl 转接口
-  - [x] 业务流程转场景
-  - [x] 性能压测场景
-  - [x] 场景调试执行
+- [x] **k6 API automation** - complete layered architecture for complex business scenarios
+  - [x] Layered architecture (`apiTest/` + `scenarios/`)
+  - [x] Unified HTTP request wrapper
+  - [x] Automatic Allure report generation
+  - [x] curl commands automatically recorded in reports
+  - [x] Report steps use spread operators with dynamic optional assertions
+  - [x] Scenario orchestration (setup/teardown)
+  - [x] Data-driven testing (SharedArray)
+  - [x] Shared assertion wrapper (Assertions)
+  - [x] Automatic login-state management
+  - [x] JSONPath response extraction
+  - [x] Fault-tolerant request parameters
+  - [ ] Integrate browser with image display?
+- [x] **k6 API performance testing** - seamless reuse of automation cases with multiple load models
+- [x] **k6 Browser frontend performance** - Core Web Vitals collection
+- [x] **Chai.js assertion integration** - rich assertion capabilities
+- [x] **Custom xk6-xxx logging extension** - high-performance structured logging
+- [x] **PostgreSQL support** - native SQL operations
+- [ ] **Multiple database adapters?**
+- [x] **WebSocket in practice** - single-user / multi-user collaborative document automation and load testing
+- [x] **Enterprise Allure reports** - beautiful HTML reports and historical trends
+- [x] **Docker containerization** - complete container support
+- [x] **Kubernetes orchestration** - distributed test execution
+- [x] **AI-assisted k6skill** - unified API wrapping, scenario orchestration, performance testing, and debugging
+  - [x] curl to API
+  - [x] business flow to scenario
+  - [x] performance scenes
+  - [x] scenario debugging
 - [ ] Redis
-  - [x] 测试示例
-- [ ] Kafka 测试示例（规划中）
-- [x] gRPC 测试示例
-- [ ] K8s
-  - [x] k8s 连接实现，健康检查
-  - [x] 日志查询，写入
-  - [ ] 模糊演练场景
-- [ ] Swagger 转换（低优先级）尽量少依赖手写接口文档，优先从 curl 转换。
+  - [x] test example
+- [ ] Kafka test example (planned)
+- [x] gRPC test example
+- [ ] Kubernetes
+  - [x] k8s connection and health check
+  - [x] log query and write
+  - [ ] chaos engineering scenarios
+- [ ] Swagger conversion (low priority) - prefer curl conversion to reduce manual API documentation.
 
 ---
 
-## 最佳实践
+## Best Practices
 
-### 1. 用例与性能复用
+### 1. Reuse cases and performance tests
 
-API 层与场景层分离，同一套 API 代码可同时用于：
-- 功能自动化测试（验证正确性）
-- 接口性能测试（验证性能指标）
-- 稳定性测试（长时间运行）
+API and scenario layers are separated, so the same API code can be used for:
 
-### 2. 数据驱动测试
+- Functional automation testing (verify correctness)
+- API performance testing (verify performance metrics)
+- Stability testing (long-running execution)
+
+### 2. Data-driven testing
 
 ```javascript
 import { SharedArray } from 'k6/data'
@@ -456,60 +463,61 @@ const testData = new SharedArray('testData', function () {
 
 export default function () {
   const user = testData[__VU % testData.length]
-  // 使用不同用户执行测试
+  // Run the test with different users
 }
 ```
 
-### 3. 环境隔离
+### 3. Environment isolation
 
-通过 `setup/teardown` 实现测试数据自动管理：
+Use `setup/teardown` to manage test data automatically:
 
 ```javascript
 export function setup() {
-  // 创建测试数据
+  // Create test data
   return { xxxFieldId: createXxx() }
 }
 
 export default function (data) {
-  // 使用 setup 创建的数据
+  // Use data created in setup
   useXxx(data.xxxFieldId)
 }
 
 export function teardown(data) {
-  // 清理测试数据
+  // Clean up test data
   deleteXxx(data.xxxFieldId)
 }
 ```
 
-### 4. AI 驱动
+### 4. AI-assisted
 
-在已有项目框架上，直接描述场景即可。
+Describe the scenario directly within the existing project framework.
 
-例如：
-- 帮我在 `xxx.js` 里实现场景，先做 A，curl 如下；再调 B，curl 如下；最后调 C，curl 如下。
-- 帮我压测一下指定web页面
-- 帮我压测一下某个接口[curl]
+Examples:
+
+- Implement a scenario in `xxx.js`: first do A (curl below), then call B (curl below), and finally call C (curl below).
+- Run a load test against a specified web page.
+- Run a load test against an API (curl).
 
 ---
 
-## 贡献与支持
+## Contributing and Support
 
-欢迎通过以下方式参与项目：
+You are welcome to participate through:
 
-- 提交 Issue 反馈问题
-- 提出新功能建议
-- 提交 Pull Request
-- 给项目点个 Star
+- Submitting issues to report problems
+- Suggesting new features
+- Submitting pull requests
+- Starring the project
 
 ---
 
 ## License
 
-本项目采用通用的 `MIT License` 作为开源协议。仓库根目录已加入 `LICENSE` 文件。
+This project is open-sourced under the MIT License. A `LICENSE` file is included in the repository root.
 
 ---
 
-## 致谢
+## Acknowledgements
 
-- 感谢 [linux.do](https://linux.do/) 社区推广支持。
-- 感谢 [k6](https://k6.io/) 团队提供的开源项目。
+- Thanks to the [linux.do](https://linux.do/) community for promotion support.
+- Thanks to the [k6](https://k6.io/) team for the open-source project.
