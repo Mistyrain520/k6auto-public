@@ -37,7 +37,7 @@
 | **高性能日志引擎** | 基于 Uber Zap 的高性能日志扩展 | 海量并发下依然保持稳定的日志记录 |
 | **WebSocket 实战** | 支持多人协同文档、实时通信场景测试 | 覆盖现代 Web 应用的核心交互场景 |
 | **场景化编排** | 支持 setup/teardown、数据驱动、复杂业务流程 | 灵活应对各种业务测试需求 |
-| **AI 驱动开发** | 集成 `k6skill`，覆盖接口封装、场景编排、性能压测与调试 | 提升测试脚本开发效率，降低人工编写成本 |
+| **AI 驱动开发** | 内置 Skills 体系（`k6skill`、`k6-assert`、`k6-catalog`、`k6-env`），覆盖接口封装、场景编排、性能压测、断言审计、检索与环境管理 | 提升测试脚本开发效率，降低人工编写成本 |
 
 ---
 
@@ -62,9 +62,9 @@
 │  ├─ Chai 断言库      ├─ PostgreSQL       ├─ Redis 缓存                  │
 │  └─ 消息/协同能力    └─ 其他中间件                                             │
 ├──────────────────────────────────────────────────────────────────────────┤
-│  AI 辅助层 (k6skill)                                                     │
-│  ├─ curl 转接口        ├─ 业务流程转场景                                  │
-│  ├─ 性能压测场景       └─ 场景调试执行                                     │
+│  AI 辅助层（Skills 体系）                                                  │
+│  ├─ k6skill：接口/场景/压测/调试    ├─ k6-assert：断言审计               │
+│  ├─ k6-catalog：接口/场景检索      └─ k6-env：环境管理                    │
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -232,11 +232,22 @@ ws.connect(url, params, function (socket) {
 
 ---
 
-### AI 驱动：k6skill
+### AI 驱动：Skills 体系
+
+**k6auto** 内置一套 AI Skills，覆盖接口封装、场景编排、性能压测、断言审计、接口/场景检索与环境管理等完整测试工作流：
+
+| Skill | 用途 | 入口 |
+|------|------|------|
+| `k6skill` | 编写/更新 apiTest 接口、scenarios 场景、性能压测（HTTP 接口/业务流程与前端页面浏览器测试）及场景调试入口 | `skills/k6skill/SKILL.md` |
+| `k6-assert` | 结合最新 allure 日志审计接口断言，给出增加/修改意见并落地 | `skills/k6-assert/SKILL.md` |
+| `k6-catalog` | 检索 apiTest 接口与 scenarios 场景、输出场景详细步骤、生成/刷新接口场景索引 | `skills/k6-catalog/SKILL.md` |
+| `k6-env` | 查看/新增/切换/修改/删除环境，初始化项目登录鉴权 | `skills/k6-env/SKILL.md` |
+
+#### k6skill：接口、场景、压测与调试
 
 **k6auto** 已整合统一的 `k6skill`，在当前仓库内支持接口封装、业务场景编排、性能压测场景和调试入口更新。它会读取项目现有代码，沿用 `apiTest/`、`scenarios/`、`scenario_debug.js` 等目录结构和命名风格，尽量复用已有方法并保持最小修改。
 
-#### 使用方式
+##### 使用方式
 
 根据任务类型直接描述需求即可：
 
@@ -260,7 +271,7 @@ curl -X POST 'http://api.example.com/xxx' \
 帮我调试 scenarios/xxx.js 里的 xxxFlow，并更新 scenario_debug.js。
 ```
 
-#### 智能特性
+##### 智能特性
 
 | 能力 | 说明 |
 |------|------|
@@ -271,22 +282,78 @@ curl -X POST 'http://api.example.com/xxx' \
 | **场景化编排** | 支持将多步骤业务流程沉淀为可复用的场景方法 |
 | **调试闭环** | 可更新 `scenario_debug.js` 并执行指定场景，结合日志定位问题 |
 
-#### Skill 配置
+##### Skill 配置
 
 统一配置位于 `skills/k6skill/SKILL.md`，按任务类型拆分引用文档：
 
 - `references/curl-to-api.md`：curl 转接口
 - `references/scenario-authoring.md`：业务场景编写
 - `references/performance-scene.md`：性能压测场景
+- `references/page-test.md`：前端页面性能测试（浏览器页面）
 - `references/scenario-debug.md`：场景调试执行
 
-#### 使用场景
+##### 使用场景
 
 - **接口快速封装**：从浏览器 DevTools 复制 curl，快速生成接口代码。
 - **业务流程沉淀**：把创建、编辑、审批、清理等多步骤流程编排成场景。
 - **性能压测复用**：基于已有 API 和场景快速生成压测入口。
 - **单场景调试**：更新调试入口并执行指定场景，快速定位失败原因。
 - **团队协作**：统一接口、场景和调试脚本的编写风格，降低审查成本。
+
+#### k6-assert：接口断言审计
+
+结合最新 allure 日志（`report/allure/<日期>/*-result.json`）盘点 `apiTest/**/*.js` 的断言覆盖，识别只保留默认三断言的接口、假断言与“假成功”风险，输出按漏斗分层的审计清单（统计句 → 模块看板 → 问题簇表 → 按需下钻），确认后再落地修改。
+
+```bash
+# 结合最新日志审查接口断言
+帮我审查所有接口的断言，哪些需要加、加什么断言。
+```
+
+| 能力 | 说明 |
+|------|------|
+| **日志驱动** | 基于最新 allure/zaplogger 日志的真实返回做判断，不凭空猜测 |
+| **假成功识别** | 识别“返回 ok 但副作用可能未发生”的风险，提示兜底断言 |
+| **漏斗分层输出** | 控制篇幅，需改接口较多时把全量明细落到 `report/audit-YYYY-MM-DD.md` |
+| **确认后落地** | 先输出选择项（全部应用 / 按模块 / 按编号），用户确认后再改代码 |
+
+#### k6-catalog：接口/场景目录检索
+
+按关键词检索 `apiTest` 接口与 `scenarios` 场景，输出接口详情或场景详细步骤。优先读取可重建缓存 `report/catalog/catalog.json`，过期时运行 `python skills/k6-catalog/scripts/build_catalog.py` 刷新。
+
+```bash
+# 列出接口
+列出所有和 item 相关的接口。
+
+# 查看场景步骤
+帮我看看 xxx 场景有哪些步骤。
+```
+
+| 能力 | 说明 |
+|------|------|
+| **关键词检索** | 同时匹配方法名、route key、description、path 和 casename |
+| **场景步骤还原** | 按代码顺序列出 group、casename、调用的 API 与关键依赖 |
+| **可重建索引** | `report/catalog/catalog.json` 仅为缓存，可随时重建 |
+
+#### k6-env：环境管理
+
+管理 k6auto 的多环境配置：查看/新增/切换/修改/删除环境，并支持初始化项目登录鉴权（需二次确认）。环境变更统一走 `config/current.js`、`main/main.js` 与 `config/envs/<环境名>/` 等注册点，完成后用 `k6 inspect` 校验。
+
+```bash
+# 查看当前环境
+当前是哪个环境？
+
+# 新增并切换环境
+帮我新增一个 prod 环境，域名是 api.example.com。
+
+# 初始化登录鉴权（项目级操作，需二次确认）
+帮我把登录鉴权改成用 /api/gateway/login 登录，Cookie 取 Set-Cookie 里的 xxx。
+```
+
+| 能力 | 说明 |
+|------|------|
+| **统一注册点** | 新增/删除环境同步维护 `config/current.js`、`main/main.js` 与入口文件 |
+| **登录鉴权初始化** | 修改整个项目登录方式前必须二次确认并备份相关文件 |
+| **校验闭环** | 每次变更后用 `k6 inspect main/main.js` 校验入口 |
 
 ---
 
@@ -421,11 +488,14 @@ k6auto/
 - [x] **Allure 企业级报告** - 美观的 HTML 报告与历史趋势
 - [x] **Docker 容器化** - 完整的容器化支持
 - [x] **Kubernetes 编排** - 分布式测试执行能力
-- [x] **AI 驱动 k6skill** - 统一支持接口封装、场景编排、性能压测和调试执行
-  - [x] curl 转接口
-  - [x] 业务流程转场景
-  - [x] 性能压测场景
-  - [x] 场景调试执行
+- [x] **AI 驱动 Skills 体系** - `k6skill` / `k6-assert` / `k6-catalog` / `k6-env`
+  - [x] k6skill：curl 转接口
+  - [x] k6skill：业务流程转场景
+  - [x] k6skill：性能压测场景
+  - [x] k6skill：场景调试执行
+  - [x] k6-assert：接口断言审计
+  - [x] k6-catalog：接口/场景检索
+  - [x] k6-env：环境管理
 - [ ] Redis
   - [x] 测试示例
 - [ ] Kafka 测试示例（规划中）

@@ -37,7 +37,7 @@ Traditional testing tools usually cover only a single testing type, while **k6au
 | **High-performance logging engine** | A high-performance logging extension based on Uber Zap | Stable logging under massive concurrency |
 | **Real-world WebSocket support** | Multi-user collaborative documents and real-time communication scenarios | Covers core interactions of modern web applications |
 | **Scenario orchestration** | setup/teardown, data-driven testing, and complex business flows | Flexible handling of diverse test requirements |
-| **AI-assisted development** | Integrated `k6skill` for API wrapping, scenario orchestration, performance testing, and debugging | Boosts script development efficiency and reduces manual work |
+| **AI-assisted development** | Built-in Skills suite (`k6skill`, `k6-assert`, `k6-catalog`, `k6-env`) for API wrapping, scenario orchestration, performance testing, assertion auditing, catalog search, and environment management | Boosts script development efficiency and reduces manual work |
 
 ---
 
@@ -63,9 +63,9 @@ Traditional testing tools usually cover only a single testing type, while **k6au
 │  ├─ Chai assertions  ├─ PostgreSQL       ├─ Redis                        │
 │  └─ messaging/collab └─ other middleware                                 │
 ├──────────────────────────────────────────────────────────────────────────┤
-│  AI assistance (k6skill)                                                  │
-│  ├─ curl to API        ├─ business flow to scenario                      │
-│  ├─ performance scene  └─ scenario debugging                             │
+│  AI assistance (Skills suite)                                             │
+│  ├─ k6skill: API/scenario/perf/debug  ├─ k6-assert: assertion audit      │
+│  ├─ k6-catalog: API/scenario search   └─ k6-env: environment management  │
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -235,11 +235,22 @@ ws.connect(url, params, function (socket) {
 
 ---
 
-### AI-assisted: k6skill
+### AI-assisted: Skills Suite
+
+**k6auto** ships a set of AI skills covering the full workflow: API wrapping, scenario orchestration, performance testing, assertion auditing, API/scenario search, and environment management:
+
+| Skill | Purpose | Entry |
+|-------|---------|-------|
+| `k6skill` | Write/update `apiTest` APIs, `scenarios` flows, performance tests (HTTP APIs/business flows and frontend browser pages), and debug entries | `skills/k6skill/SKILL.md` |
+| `k6-assert` | Audit API assertions against the latest Allure logs and apply improvements after confirmation | `skills/k6-assert/SKILL.md` |
+| `k6-catalog` | Search APIs and scenarios, show scenario steps, and build/refresh the catalog index | `skills/k6-catalog/SKILL.md` |
+| `k6-env` | View/add/switch/edit/remove environments and initialize project login auth | `skills/k6-env/SKILL.md` |
+
+#### k6skill: APIs, Scenarios, Performance & Debugging
 
 **k6auto** integrates a unified `k6skill` that supports API wrapping, business scenario orchestration, performance scenes, and debug entry updates in this repository. It reads existing project code and follows the directory structure and naming conventions of `apiTest/`, `scenarios/`, `scenario_debug.js`, and other modules, reusing existing methods and keeping changes minimal.
 
-#### Usage
+##### Usage
 
 Simply describe the requirement according to the task type:
 
@@ -263,7 +274,7 @@ Write a load test with 100 VUs running for 5 minutes based on the existing APIs.
 Help me debug xxxFlow in scenarios/xxx.js and update scenario_debug.js.
 ```
 
-#### Smart Features
+##### Smart Features
 
 | Capability | Description |
 |-----------|-------------|
@@ -274,22 +285,78 @@ Help me debug xxxFlow in scenarios/xxx.js and update scenario_debug.js.
 | **Scenario orchestration** | Turns multi-step business flows into reusable scenario methods |
 | **Debug loop** | Updates `scenario_debug.js` and runs a specific scenario, using logs to locate issues |
 
-#### Skill Configuration
+##### Skill Configuration
 
 The unified configuration is in `skills/k6skill/SKILL.md`, with reference documents split by task type:
 
 - `references/curl-to-api.md`: curl to API
 - `references/scenario-authoring.md`: business scenario authoring
 - `references/performance-scene.md`: performance scenes
+- `references/page-test.md`: frontend page performance testing (browser)
 - `references/scenario-debug.md`: scenario debugging
 
-#### Use Cases
+##### Use Cases
 
 - **Rapid API wrapping**: copy a curl from browser DevTools and quickly generate API code.
 - **Business flow reuse**: orchestrate create, edit, approve, and cleanup flows into scenarios.
 - **Performance test reuse**: quickly generate load test entries from existing APIs and scenarios.
 - **Single-scenario debugging**: update the debug entry and run a specific scenario to find failures fast.
 - **Team collaboration**: unify the style of APIs, scenarios, and debug scripts to lower review cost.
+
+#### k6-assert: API Assertion Audit
+
+Audits the assertion coverage of `apiTest/**/*.js` against the latest Allure logs (`report/allure/<date>/*-result.json`), surfaces APIs that still rely only on the three default assertions, flags weak assertions and false-success risks, and prints a funnel-shaped report (summary → module board → issue clusters → drill-down). Code changes are applied only after confirmation.
+
+```bash
+# Audit all API assertions against the latest logs
+Review all API assertions and tell me what to add or change.
+```
+
+| Capability | Description |
+|-----------|-------------|
+| **Log-driven** | Judges from real responses in the latest Allure/zaplogger logs, not guesses |
+| **False-success detection** | Flags cases where a response looks OK but the side effect may not have happened |
+| **Funnel output** | Keeps the report compact; bulk details go to `report/audit-YYYY-MM-DD.md` |
+| **Apply after confirmation** | Offers all / by module / by number and edits code only after the user confirms |
+
+#### k6-catalog: API/Scenario Catalog
+
+Searches `apiTest` APIs and `scenarios` flows by keyword and prints API details or scenario steps. Reads the rebuildable cache `report/catalog/catalog.json` first and refreshes it with `python skills/k6-catalog/scripts/build_catalog.py` when stale.
+
+```bash
+# List APIs
+List all item-related APIs.
+
+# Show scenario steps
+Show me the steps in the xxx scenario.
+```
+
+| Capability | Description |
+|-----------|-------------|
+| **Keyword search** | Matches method names, route keys, descriptions, paths, and casenames |
+| **Scenario step replay** | Lists group, casename, called APIs, and key dependencies in code order |
+| **Rebuildable index** | `report/catalog/catalog.json` is only a cache and can be rebuilt at any time |
+
+#### k6-env: Environment Management
+
+Manages k6auto's multi-environment configuration: view/add/switch/edit/remove environments, and initialize project login auth (requires double confirmation). Changes touch `config/current.js`, `main/main.js`, and `config/envs/<env>/`, and are validated with `k6 inspect`.
+
+```bash
+# Show the current environment
+Which environment am I on?
+
+# Add and switch to an environment
+Add a prod environment with domain api.example.com.
+
+# Initialize login auth (project-wide, double confirmation)
+Change login to POST /api/gateway/login and read the cookie from Set-Cookie xxx.
+```
+
+| Capability | Description |
+|-----------|-------------|
+| **Single registration path** | Add/remove environments updates `config/current.js`, `main/main.js`, and entry files together |
+| **Login auth init** | Double confirmation and file backups before changing project-wide auth |
+| **Validation loop** | `k6 inspect main/main.js` after every change |
 
 ---
 
@@ -425,11 +492,14 @@ k6auto/
 - [x] **Enterprise Allure reports** - beautiful HTML reports and historical trends
 - [x] **Docker containerization** - complete container support
 - [x] **Kubernetes orchestration** - distributed test execution
-- [x] **AI-assisted k6skill** - unified API wrapping, scenario orchestration, performance testing, and debugging
-  - [x] curl to API
-  - [x] business flow to scenario
-  - [x] performance scenes
-  - [x] scenario debugging
+- [x] **AI-assisted Skills suite** - `k6skill` / `k6-assert` / `k6-catalog` / `k6-env`
+  - [x] k6skill: curl to API
+  - [x] k6skill: business flow to scenario
+  - [x] k6skill: performance scenes
+  - [x] k6skill: scenario debugging
+  - [x] k6-assert: API assertion audit
+  - [x] k6-catalog: API/scenario search
+  - [x] k6-env: environment management
 - [ ] Redis
   - [x] test example
 - [ ] Kafka test example (planned)
