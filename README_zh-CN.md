@@ -88,25 +88,30 @@ npm install
 
 ```bash
 # 安装 xk6
-# go version 大于 1.23.2即可
-go install go.k6.io/xk6@v1.4.4
+# k6 v2 需要 Go 1.25 或更高版本
+go install go.k6.io/xk6@v1.5.0
 
-# 构建包含扩展的 k6
-xk6 build --verbose --k6-version v1.7.1 \
-  --with github.com/Mistyrain520/xk6-zap@v1.6.0 \
-  --with github.com/grafana/xk6-sql@v1.0.5 \
-  --with github.com/Mistyrain520/xk6-file@v1.0.0 \
-  --with github.com/grafana/xk6-kubernetes@v0.10.3
+# 使用已发布的扩展 Release 构建 k6 v2
+xk6 build v2.0.0 --verbose --output k6-v2.exe \
+  --with github.com/Mistyrain520/xk6-zap/v2@v2.0.1 \
+  --with github.com/Mistyrain520/xk6-file/v2@v2.0.1 \
+  --with github.com/grafana/xk6-sql@v1.2.2 \
+  --with github.com/grafana/xk6-sql-driver-postgres@v0.3.1 \
+  --with github.com/grafana/xk6-kubernetes@v0.12.0 \
+  --with github.com/grafana/xk6-redis@v0.4.2
 
 # 检查扩展是否编译成功
-.\k6.exe version
+.\k6-v2.exe version
 ```
 
 ### 3. Docker 一键部署
 
 ```bash
 # 使用本地 Dockerfile 构建镜像
-docker build -f Dockerfile -t k6auto:k6-v1.7.1 .
+docker build -f Dockerfile -t k6auto:k6-v2.0.0 .
+
+# 运行测试
+docker run -v $(pwd):/home/xk6 k6auto:k6-v2.0.0 ./k6 run main/main.js
 
 ```
 

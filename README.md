@@ -89,28 +89,30 @@ We use [xk6](https://github.com/grafana/xk6) to build a k6 binary that includes 
 
 ```bash
 # Install xk6
-# Go 1.23.2 or later is sufficient
-go install go.k6.io/xk6@v1.4.4
+# Go 1.25 or later is required for k6 v2
+go install go.k6.io/xk6@v1.5.0
 
-# Build k6 with extensions
-xk6 build --verbose --k6-version v1.7.1 \
-  --with github.com/Mistyrain520/xk6-zap@v1.6.0 \
-  --with github.com/grafana/xk6-sql@v1.0.5 \
-  --with github.com/Mistyrain520/xk6-file@v1.0.0 \
-  --with github.com/grafana/xk6-kubernetes@v0.10.3
+# Build k6 v2 with the published extension releases
+xk6 build v2.0.0 --verbose --output k6-v2.exe \
+  --with github.com/Mistyrain520/xk6-zap/v2@v2.0.1 \
+  --with github.com/Mistyrain520/xk6-file/v2@v2.0.1 \
+  --with github.com/grafana/xk6-sql@v1.2.2 \
+  --with github.com/grafana/xk6-sql-driver-postgres@v0.3.1 \
+  --with github.com/grafana/xk6-kubernetes@v0.12.0 \
+  --with github.com/grafana/xk6-redis@v0.4.2
 
 # Verify the extensions compiled successfully
-.\k6.exe version
+.\k6-v2.exe version
 ```
 
 ### 3. One-click Docker deployment
 
 ```bash
 # Build the image using the local Dockerfile
-docker build -f Dockerfile -t k6auto:k6-v1.7.1 .
+docker build -f Dockerfile -t k6auto:k6-v2.0.0 .
 
 # Run tests
-docker run -v $(pwd):/home/xk6 k6auto:k6-v1.7.1 ./k6 run main/main.js
+docker run -v $(pwd):/home/xk6 k6auto:k6-v2.0.0 ./k6 run main/main.js
 ```
 
 ### 4. Distributed execution on Kubernetes

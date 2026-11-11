@@ -151,7 +151,7 @@ export function testmanager_importjsonl_flow() {
     limit: 1,
     keys: 'factors',
     group,
-    casename: '查询用例对应的因子组合数据,
+    casename: '查询用例对应的因子组合数据',
   })
 
   // 5.3 断言：存在两个数据因子，且每个数据因子的值与 jsonl 文件一致
@@ -251,7 +251,7 @@ export function testmanager_importjsonl_flow() {
       loginRes: loginRes || null,
       ids: factorIds,
       group,
-      casename: '删除导入的测试数据因子,
+      casename: '删除导入的测试数据因子',
     })
   }
 

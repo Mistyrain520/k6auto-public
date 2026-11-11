@@ -1,6 +1,7 @@
 import http from 'k6/http';
 import { sleep,check } from 'k6';
 import sql from 'k6/x/sql';
+import driver from 'k6/x/sql/driver/postgres';
 import zaplogger from 'k6/x/zaplogger';
 import Assertions from '../tool/assertion.js'
 console.log("####@@@@")

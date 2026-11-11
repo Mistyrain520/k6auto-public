@@ -1,5 +1,6 @@
 import { sleep } from 'k6';
 // import sql from 'k6/x/sql';
+// import driver from 'k6/x/sql/driver/postgres';
 import {ApiOptions} from '../config/apiOptions.js'
 import { getNowString, writeDataJson, writeEnvData } from '../tool/allTool.js'
 // import { getFieldtype_Date } from '../tool/pgsql.js';
@@ -39,7 +40,7 @@ let myitemtype = apicreateItemType({
 
 */
 export function setupdata(){
-    // const db = sql.open('postgres', 'postgres://<YOUR-DB-USER>:<YOUR-DB-PASSWORD>@<YOUR-DB-HOST>:5432/<YOUR-DB-NAME>?sslmode=disable');
+    // const db = sql.open(driver, 'postgres://<YOUR-DB-USER>:<YOUR-DB-PASSWORD>@<YOUR-DB-HOST>:5432/<YOUR-DB-NAME>?sslmode=disable');
     // try {
     //     // 尝试执行一个简单的查询
     //     let results = db.query('SELECT 1');

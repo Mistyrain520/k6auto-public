@@ -1,1 +1,5 @@
 node_modules/
+.tmp-go/
+.pnpm-store/
+k6.exe
+k6-v2.exe

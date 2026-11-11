@@ -1,10 +1,13 @@
 FROM crpi-mstj0ugnrdkhzm1r.cn-guangzhou.personal.cr.aliyuncs.com/chensuixaing/golang:tip-alpine3.22 AS builder
 
-ARG XK6_VERSION=v1.4.4
-ARG K6_VERSION=v1.7.1
-ARG XK6_ZAP_VERSION=v1.6.0
-ARG XK6_SQL_VERSION=v1.0.5
-ARG XK6_FILE_VERSION=v1.0.0
+ARG XK6_VERSION=v1.5.0
+ARG K6_VERSION=v2.0.0
+ARG XK6_ZAP_VERSION=v2.0.1
+ARG XK6_FILE_VERSION=v2.0.1
+ARG XK6_SQL_VERSION=v1.2.2
+ARG XK6_SQL_POSTGRES_VERSION=v0.3.1
+ARG XK6_KUBERNETES_VERSION=v0.12.0
+ARG XK6_REDIS_VERSION=v0.4.2
 
 # 安装必要的依赖包
 RUN apk update && \
@@ -20,17 +23,22 @@ WORKDIR /root/go/bin
 RUN ls -l xk6
 
 # 执行 xk6 构建命令
-RUN ./xk6 build --verbose --k6-version ${K6_VERSION} \
-    --with github.com/Mistyrain520/xk6-zap@${XK6_ZAP_VERSION} \
+RUN ./xk6 build ${K6_VERSION} --verbose \
+    --with github.com/Mistyrain520/xk6-zap/v2@${XK6_ZAP_VERSION} \
     --with github.com/grafana/xk6-sql@${XK6_SQL_VERSION} \
-    --with github.com/Mistyrain520/xk6-file@${XK6_FILE_VERSION} \
-    --with github.com/grafana/xk6-kubernetes@v0.10.3
+    --with github.com/grafana/xk6-sql-driver-postgres@${XK6_SQL_POSTGRES_VERSION} \
+    --with github.com/Mistyrain520/xk6-file/v2@${XK6_FILE_VERSION} \
+    --with github.com/grafana/xk6-kubernetes@${XK6_KUBERNETES_VERSION} \
+    --with github.com/grafana/xk6-redis@${XK6_REDIS_VERSION}
 
 # 检查构建结果，确认扩展列表符合预期
 RUN ./k6 version | tee /tmp/k6-version.txt && \
     grep -q "github.com/Mistyrain520/xk6-zap" /tmp/k6-version.txt && \
+    grep -q "github.com/Mistyrain520/xk6-file" /tmp/k6-version.txt && \
     grep -q "github.com/grafana/xk6-sql" /tmp/k6-version.txt && \
-    grep -q "github.com/Mistyrain520/xk6-file" /tmp/k6-version.txt
+    grep -q "github.com/grafana/xk6-sql-driver-postgres" /tmp/k6-version.txt && \
+    grep -q "github.com/grafana/xk6-kubernetes" /tmp/k6-version.txt && \
+    grep -q "github.com/grafana/xk6-redis" /tmp/k6-version.txt
 
 # 第二阶段：最终镜像
 FROM crpi-mstj0ugnrdkhzm1r.cn-guangzhou.personal.cr.aliyuncs.com/chensuixaing/golang:tip-alpine3.22

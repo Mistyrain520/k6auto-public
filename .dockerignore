@@ -1,0 +1,6 @@
+.git
+.tmp-go
+node_modules
+.pnpm-store
+*.exe
+report

@@ -2,7 +2,7 @@ import http from 'k6/http';
 import { sleep, check } from 'k6';
 import { request } from '../../k6http/k6http.js';
 import {ApiOptions} from '../../config/apiOptions.js'
-import {dealrespon, httpRequestToCurl, checkExpectation, consoleLog } from '../../tool/allTool.js';
+import {dealrespon, httpRequestToCurl, consoleLog } from '../../tool/allTool.js';
 import { expect } from "../../tool/chaijs.js";
 import {WikiOptions} from '../config.js'
 // import zaplogger from 'k6/x/zaplogger';

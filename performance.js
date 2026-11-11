@@ -2,12 +2,13 @@ import http from 'k6/http';
 import { fail } from 'k6';
 // import { sleep } from 'k6';
 import sql from 'k6/x/sql';
+import driver from 'k6/x/sql/driver/postgres';
 import {setupdata} from './scenarios/setupdata.js'
 import { teardowndata } from './scenarios/teardown.js';
 import { createItem } from './scenarios/itemScenarios.js';
 import { getitemGroup } from './tool/pgsql.js';
 export function setup() {
-  const db1 = sql.open('postgres', 'postgres://<YOUR-DB-USER>:<YOUR-DB-PASSWORD>@<YOUR-DB-HOST>:5432/<YOUR-DB-NAME>?sslmode=disable');
+  const db1 = sql.open(driver, 'postgres://<YOUR-DB-USER>:<YOUR-DB-PASSWORD>@<YOUR-DB-HOST>:5432/<YOUR-DB-NAME>?sslmode=disable');
   const data = setupdata()
   data.myitemGroup = {'objectId':getitemGroup(db1, data.myworkspace.objectId)}
   return data
