@@ -502,6 +502,12 @@ k6auto/
   - [x] k6-assert: API assertion audit
   - [x] k6-catalog: API/scenario search
   - [x] k6-env: environment management
+- [ ] **LLM Calling**
+  - [ ] Prompt injection
+  - [ ] Context compression
+  - [ ] Agent configuration
+  - [ ] Looper conversation loop
+- [ ] **Multi-service (microservice) support**
 - [ ] Redis
   - [x] test example
 - [ ] Kafka test example (planned)

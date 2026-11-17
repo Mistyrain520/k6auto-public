@@ -501,6 +501,12 @@ k6auto/
   - [x] k6-assert：接口断言审计
   - [x] k6-catalog：接口/场景检索
   - [x] k6-env：环境管理
+- [ ] **LLM Calling**
+  - [ ] Prompt 注入
+  - [ ] 上下文压缩
+  - [ ] Agent 配置
+  - [ ] Looper 对话循环器
+- [ ] **多（微）服务支持**
 - [ ] Redis
   - [x] 测试示例
 - [ ] Kafka 测试示例（规划中）
