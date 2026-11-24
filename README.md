@@ -94,7 +94,7 @@ go install go.k6.io/xk6@v1.5.0
 
 # Build k6 v2 with the published extension releases
 xk6 build v2.0.0 --verbose --output k6-v2.exe \
-  --with github.com/Mistyrain520/xk6-zap/v2@v2.0.1 \
+  --with github.com/Mistyrain520/xk6-zap/v2@v2.0.2 \
   --with github.com/Mistyrain520/xk6-file/v2@v2.0.1 \
   --with github.com/grafana/xk6-sql@v1.2.2 \
   --with github.com/grafana/xk6-sql-driver-postgres@v0.3.1 \
