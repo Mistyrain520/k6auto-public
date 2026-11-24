@@ -32,6 +32,7 @@
 - 优先通过 `itemApi`、`testManagerApi`、`workspaceApi`、`fileApi` 这类聚合对象调用接口。
 - 只导入实际使用的 API 和工具。
 - 场景层日志保持轻量，接口日志和基础断言交给 API 层。
+- 场景层和 `basescenarios` 不定义、不覆盖 HTTP Header；curl 中的 Header 必须先在 `apiTest` 层通过 `apiTest/core/headers.js` 统一处理。
 
 ## 对用户的输出
 

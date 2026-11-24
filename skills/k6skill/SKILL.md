@@ -26,6 +26,8 @@ description: 在当前 k6auto 仓库内编写或更新 apiTest 接口方法、sc
 ## 共享规则
 
 - 新增接口前，先搜索 `apiTest/` 是否已经存在重复方法；搜索 `scenarios/basescenarios/` 是否已经存在可复用场景接口。
+- Header 统一由 `apiTest/core/headers.js` 管理，`route.headers` 必须引用其中导出的命名构造器。新增接口前先检索现有构造器并比较实际 Header 组成：完全一致才复用；不一致就在 `headers.js` 新增命名构造器，不在业务模块内另写 `xxxHeaders` 或直接写 `headers: { ... }`。
+- 禁止在 `scenarios/`、`basescenarios` 或测试入口中定义或覆盖 HTTP Header；curl 中的 Header 必须先在 `apiTest` 层通过 `headers.js` 统一吸收。Header 中的域名、租户、token、Cookie、appId、deviceNumber 等环境相关值必须从 `ApiOptions` 或当前环境配置读取。
 - 若 basescenarios 辅助函数因写死上下文（如 `data.myworkspace`、`itemType`、`loginRes`）无法直接复用，禁止静默在场景里重写等价代码，要向用户说明差异并请其确认扩展方式。
 - 判断重复时，同时看方法名、route key、route `description`，`casename`，因为描述可能是中文也可能是英文。
 - 保留用户已有代码，采用追加或最小修改，不覆盖无关内容。
@@ -54,7 +56,7 @@ description: 在当前 k6auto 仓库内编写或更新 apiTest 接口方法、sc
 - 场景层：`scenarios/`
 - 场景调试入口：`scenario_debug.js`
 - 通用请求流程：`apiTest/core/apiCaller.js`
-- 通用请求头：`apiTest/core/headers.js`
+- 唯一请求 Header 入口：`apiTest/core/headers.js`
 - 环境切换点：`config/current.js`（`currentEnv`）
 - 环境数据目录：`config/envs/<当前环境>/`（`data.json`、`dataTestmanager.json`）
 - 登录态刷新：`config/refreshLogin.js`

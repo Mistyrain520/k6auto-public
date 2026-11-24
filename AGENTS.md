@@ -24,7 +24,9 @@ k6auto 是基于 k6 的全栈自动化测试框架，核心分层是：
 ### 接口层（apiTest/）
 
 - `apiTest/core/apiCaller.js` 是统一执行入口：`callApi(route, params)` 负责构建请求、调用 `k6http`、解析返回、注入默认三断言并写日志。
-- `apiTest/core/headers.js` 提供通用 header 构造器：`jsonRequestParams`、`textRequestParams`、`oneRequestParams`。
+- `apiTest/core/headers.js` 是请求 Header 的唯一统一入口，现有构造器包括 `jsonRequestParams`、`textRequestParams`、`oneRequestParams`；项目需要但现有构造器不匹配时，在此新增命名构造器。
+- 新增接口的 `route.headers` 必须引用 `headers.js` 导出的命名构造器。先检索并比较现有构造器实际生成的 Header；完全一致才复用，不一致就在 `headers.js` 新增命名构造器。禁止在 `apiTest` 业务模块、`scenarios/` 或其他入口中直接拼 Header，也不要为绕开公共构造器另写本地 Header 函数。
+- Header 中的域名、租户、token、Cookie、appId、deviceNumber 等环境相关值必须从 `ApiOptions` 或当前环境配置读取，禁止写死。
 - 每个模块（如 `item.js`、`workspace.js`）采用固定形态：
 
 ```js
